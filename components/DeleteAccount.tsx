@@ -159,35 +159,6 @@ export default function DeleteAccount() {
                             <p className="text-[#131118] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">
                                 This action is irreversible
                             </p>
-                            <p className="text-[#6b608a] dark:text-gray-400 text-base font-normal leading-relaxed">
-                                By deleting your account, you will lose access to all your
-                                project data, historical reports, and active subscriptions
-                                immediately.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="px-6 py-4 border-t border-gray-100 dark:border-gray-800">
-                        <p className="text-sm font-semibold uppercase tracking-wider text-[#6b608a] dark:text-gray-500 mb-2">
-                            Please confirm the following:
-                        </p>
-                        <div className="space-y-1">
-                            <motion.label
-                                initial={{ opacity: 0, x: -10 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ delay: 0.4 }}
-                                className="flex gap-x-3 py-2 flex-row cursor-pointer group"
-                            >
-                                <input
-                                    checked={confirmed1}
-                                    onChange={(e) => setConfirmed1(e.target.checked)}
-                                    className="h-5 w-5 rounded border-gray-300 dark:border-gray-700 border-2 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0 focus:outline-none transition-colors"
-                                    type="checkbox"
-                                />
-                                <p className="text-[#131118] dark:text-gray-300 text-sm font-normal leading-normal group-hover:text-primary transition-colors">
-                                    I understand my profile and all workspace data will be erased
-                                </p>
-                            </motion.label>
                             <motion.label
                                 initial={{ opacity: 0, x: -10 }}
                                 animate={{ opacity: 1, x: 0 }}

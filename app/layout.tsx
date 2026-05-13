@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "PassVault",
-  description: "Secure Password and Identity Manager",
+  title: "Voice Lab | Professional AI Voice Studio",
+  description: "Transform your audio projects with advanced AI. Studio-grade Text-to-Speech, real-time Voice Changing, and cinematic Sound Effects.",
 };
 
 export default function RootLayout({

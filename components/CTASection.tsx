@@ -26,7 +26,7 @@ export default function CTASection() {
                             transition={{ delay: 0.2 }}
                             className="text-4xl md:text-5xl font-black mb-6"
                         >
-                            Ready to Transform Your Writing?
+                            Ready to Elevate Your Audio Identity?
                         </motion.h2>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
@@ -35,10 +35,7 @@ export default function CTASection() {
                             transition={{ delay: 0.3 }}
                             className="text-xl opacity-90 mb-10 max-w-2xl mx-auto font-medium"
                         >
-                           {/* Join over 1 million creatives and professionals who are already
-                            using AI to power their words. */}
-                            Prioritize thumb-friendly buttons and fast-loading elements since it's a mobile app landing page. Test with power words like "Instantly," "Effortless," and numbers (e.g., "8 AI Tools"). Send the first screen for tailored revisions!
-                            
+                            Experience the future of voice synthesis. Design professional-grade audio projects instantly with our suite of 5 advanced AI tools. Start your high-fidelity journey today.
                         </motion.p>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -59,7 +56,7 @@ export default function CTASection() {
                                     }}
                                     className="w-full sm:w-auto bg-transparent border-2 border-white/40 hover:border-white text-white font-bold py-4 px-12 rounded-xl text-lg transition-all"
                                 >
-                                    View All Tools
+                                    Explore Studio Tools
                                 </motion.button>
                             </Link>
                         </motion.div>
