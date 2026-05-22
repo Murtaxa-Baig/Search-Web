@@ -20,8 +20,8 @@ export default function AboutSection() {
             Unleash Your Creative Voice
           </h2>
           <p className="text-gray-600 dark:text-gray-400 mb-10 text-lg leading-relaxed max-w-2xl mx-auto">
-            Experience the next generation of audio manipulation. Voice Lab provides 
-            a comprehensive suite of AI-powered tools designed to give you complete 
+            Experience the next generation of audio manipulation. Voice Labs provides
+            a comprehensive suite of AI-powered tools designed to give you complete
             control over how you sound and how you tell your stories.
           </p>
           <ul className="space-y-4 max-w-xl mx-auto text-left">

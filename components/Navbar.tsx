@@ -20,9 +20,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur border-b border-gray-200 dark:border-gray-800 transition-shadow duration-300 ${
-        scrolled ? "shadow-lg" : ""
-      }`}
+      className={`sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur border-b border-gray-200 dark:border-gray-800 transition-shadow duration-300 ${scrolled ? "shadow-lg" : ""
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -33,7 +32,7 @@ export default function Navbar() {
               href="/"
               className="text-[#131118] dark:text-white text-xl font-bold tracking-tight truncate"
             >
-              Voice Lab
+              Voice Labs
             </Link>
           </div>
 
@@ -80,10 +79,9 @@ function NavLinks({ mobile = false, onClick }: NavLinksProps) {
   const isActive = (path: string) => pathname === path;
 
   const linkClass = (path: string) =>
-    `${base} ${
-      isActive(path)
-        ? "text-primary"
-        : "text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+    `${base} ${isActive(path)
+      ? "text-primary"
+      : "text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
     }`;
 
   return (
@@ -115,9 +113,8 @@ function NavLinks({ mobile = false, onClick }: NavLinksProps) {
           }
           onClick?.();
         }}
-        className={`${
-          mobile ? "mt-2" : ""
-        } text-sm font-bold px-6 py-2 rounded-lg transition-all brand-gradient text-white hover:opacity-90 shadow-md hover:shadow-lg`}
+        className={`${mobile ? "mt-2" : ""
+          } text-sm font-bold px-6 py-2 rounded-lg transition-all brand-gradient text-white hover:opacity-90 shadow-md hover:shadow-lg`}
       >
         Download
       </Link>

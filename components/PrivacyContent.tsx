@@ -78,7 +78,7 @@ export default function PrivacyContent() {
           Privacy Policy
         </h1>
         <p className="text-[#6b608a] dark:text-[#a097bd] text-lg md:text-xl font-normal leading-relaxed max-w-3xl mb-8">
-          Voice Labs – AI Voice Changer is dedicated to maintaining transparent information about how we collect, use, process, and protect your data while using our AI-powered voice technologies.
+          Voice Labss – AI Voice Changer is dedicated to maintaining transparent information about how we collect, use, process, and protect your data while using our AI-powered voice technologies.
         </p>
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm">
           <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
@@ -101,7 +101,7 @@ export default function PrivacyContent() {
 
       {/* Main Content & Navigation Columns */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        
+
         {/* Left Side: Sticky Navigation */}
         <aside className="hidden lg:block lg:col-span-4 xl:col-span-3">
           <div className="sticky top-24 max-h-[calc(100vh-140px)] overflow-y-auto pr-4 space-y-6 scrollbar-thin scrollbar-thumb-gray-200 dark:scrollbar-thumb-gray-800">
@@ -114,11 +114,10 @@ export default function PrivacyContent() {
                   <button
                     key={section.id}
                     onClick={() => scrollToSection(section.id)}
-                    className={`w-full text-left px-3 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-2 ${
-                      activeSection === section.id
+                    className={`w-full text-left px-3 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-2 ${activeSection === section.id
                         ? "bg-primary text-white shadow-md shadow-primary/25"
                         : "text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-primary dark:hover:text-white"
-                    }`}
+                      }`}
                   >
                     <span className={`w-1.5 h-1.5 rounded-full ${activeSection === section.id ? "bg-white" : "bg-transparent"}`}></span>
                     <span className="truncate">{section.label}</span>
@@ -126,7 +125,7 @@ export default function PrivacyContent() {
                 ))}
               </nav>
             </div>
-            
+
             {/* Quick Contact Info Box */}
             <div className="p-5 rounded-2xl brand-gradient text-white shadow-lg space-y-3">
               <h4 className="font-bold text-lg">Need Support?</h4>
@@ -146,7 +145,7 @@ export default function PrivacyContent() {
 
         {/* Right Side: Document Content */}
         <div className="col-span-11 lg:col-span-8 xl:col-span-9 space-y-16">
-          
+
           {/* Section 1: Introduction */}
           <motion.section
             id="introduction"
@@ -161,10 +160,10 @@ export default function PrivacyContent() {
             </div>
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                This Privacy Policy explains how **Voice Labs – AI Voice Changer** collects, uses, stores, and protects user information when using our mobile application, website, and AI voice services.
+                This Privacy Policy explains how **Voice Labss – AI Voice Changer** collects, uses, stores, and protects user information when using our mobile application, website, and AI voice services.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                By using Voice Labs, you agree to the practices described in this Privacy Policy.
+                By using Voice Labss, you agree to the practices described in this Privacy Policy.
               </p>
             </div>
           </motion.section>
@@ -181,9 +180,9 @@ export default function PrivacyContent() {
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">2</span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Information We Collect</h2>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              
+
               {/* Account Information */}
               <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
                 <div className="flex items-center gap-3 text-primary">
@@ -269,7 +268,7 @@ export default function PrivacyContent() {
                   <span className="material-symbols-outlined p-2 rounded-xl bg-green-500/10">photo_library</span>
                   <h3 className="font-bold text-lg text-[#131118] dark:text-white">Media & Device Permissions</h3>
                 </div>
-                <p className="text-xs text-gray-500">With your permission, Voice Labs may access:</p>
+                <p className="text-xs text-gray-500">With your permission, Voice Labss may access:</p>
                 <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-2">
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
@@ -300,12 +299,12 @@ export default function PrivacyContent() {
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">3</span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">How We Use Your Information</h2>
             </div>
-            
+
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm">
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
                 We processes and utilizes the information we collect for the following key purposes:
               </p>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
                   { text: "Create and manage user accounts", icon: "manage_accounts" },
@@ -339,11 +338,11 @@ export default function PrivacyContent() {
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">4</span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Subscription & Credits Policy</h2>
             </div>
-            
+
             <div className="space-y-6">
               {/* Grid 1: Credits & Subscription Plans */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
+
                 {/* Free Credits */}
                 <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -mr-8 -mt-8"></div>
@@ -352,7 +351,7 @@ export default function PrivacyContent() {
                     <h3 className="font-bold text-lg text-[#131118] dark:text-white">Free Credits</h3>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                    Voice Labs provides:
+                    Voice Labss provides:
                   </p>
                   <div className="p-4 rounded-xl bg-primary/5 border border-primary/10 text-center">
                     <div className="text-3xl font-black text-primary">300 Credits</div>
@@ -391,7 +390,7 @@ export default function PrivacyContent() {
                   <span className="material-symbols-outlined">key</span>
                   <h3 className="font-bold text-lg text-[#131118] dark:text-white">Feature Access Rules</h3>
                 </div>
-                
+
                 <div className="space-y-4">
                   <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-2">
                     <h4 className="font-bold text-sm text-[#131118] dark:text-white">Text-to-Speech</h4>
@@ -399,7 +398,7 @@ export default function PrivacyContent() {
                       Users may use free credits, purchase additional credits, or subscribe to premium plans for higher generation limits. Extra purchased credits can **only** be used for Text-to-Speech generation.
                     </p>
                   </div>
-                  
+
                   <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-2">
                     <h4 className="font-bold text-sm text-[#131118] dark:text-white">AI Voice Changer & AI Sound Effects</h4>
                     <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
@@ -458,12 +457,12 @@ export default function PrivacyContent() {
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">5</span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Legal Basis for Processing</h2>
             </div>
-            
+
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm">
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
                 We process your information in compliance with standard legal guidelines under the following bases:
               </p>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {[
                   { label: "User Consent", desc: "Given when enabling device permissions or submitting details.", icon: "done_all" },
@@ -493,15 +492,15 @@ export default function PrivacyContent() {
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">6</span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Third-Party Services & Data Processors</h2>
             </div>
-            
+
             <div className="space-y-6">
               <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm">
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 text-sm">
                   We partner with trusted service providers to run secure processing, database systems, and billing services. These third parties only process data necessary to provide app functionality:
                 </p>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  
+
                   {/* ElevenLabs */}
                   <div className="p-5 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-2">
                     <div className="flex items-center justify-between">
@@ -563,7 +562,7 @@ export default function PrivacyContent() {
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">7</span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Disclaimer Regarding ElevenLabs</h2>
             </div>
-            
+
             <div className="p-6 rounded-2xl bg-amber-500/5 dark:bg-amber-500/5 border border-amber-500/20 shadow-sm space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 p-3 text-amber-500/10 pointer-events-none">
                 <span className="material-symbols-outlined text-8xl">warning</span>
@@ -574,7 +573,7 @@ export default function PrivacyContent() {
               </div>
               <div className="space-y-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
-                  Voice Labs – AI Voice Changer is built using advanced AI technologies powered in part by **ElevenLabs** services.
+                  Voice Labss – AI Voice Changer is built using advanced AI technologies powered in part by **ElevenLabs** services.
                 </p>
                 <p className="font-semibold text-gray-800 dark:text-gray-200">
                   We are not affiliated with, endorsed by, or officially associated with ElevenLabs.
@@ -598,7 +597,7 @@ export default function PrivacyContent() {
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">8</span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Data Retention</h2>
             </div>
-            
+
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 We retain user information only as long as necessary to fulfill the following requirements:
@@ -635,7 +634,7 @@ export default function PrivacyContent() {
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">9</span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">International Data Transfers</h2>
             </div>
-            
+
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 Your information may be processed and stored in countries outside your local jurisdiction where our third-party infrastructure providers operate (such as securely configured data centers in the United States and globally).
@@ -658,12 +657,12 @@ export default function PrivacyContent() {
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">10</span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">User Rights</h2>
             </div>
-            
+
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-6">
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 Depending on your geographic region, you may possess the following legal rights regarding your personal information:
               </p>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
                   { title: "Access to Personal Data", desc: "Request details and copy of the personal information stored in our secure database.", icon: "database" },
@@ -681,9 +680,9 @@ export default function PrivacyContent() {
                   </div>
                 ))}
               </div>
-              
+
               <p className="text-xs text-gray-500 text-center dark:text-gray-400">
-                To initiate any data rights requests, please submit your request to our support email: 
+                To initiate any data rights requests, please submit your request to our support email:
                 <a className="text-primary font-bold ml-1 hover:underline text-sm" href="mailto:Appnayatecnologoes@gmail.com">Appnayatecnologoes@gmail.com</a>.
               </p>
             </div>
@@ -701,12 +700,12 @@ export default function PrivacyContent() {
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">11</span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Cookies & Technical Information</h2>
             </div>
-            
+
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Voice Labs may implement standard technical tracking and performance technologies:
+                Voice Labss may implement standard technical tracking and performance technologies:
               </p>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 {[
                   { title: "Essential Sessions", desc: "Maintaining secure login state across page interactions.", icon: "login" },
@@ -739,7 +738,7 @@ export default function PrivacyContent() {
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">12</span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Children’s Privacy</h2>
             </div>
-            
+
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 p-3 text-red-500/10 pointer-events-none">
                 <span className="material-symbols-outlined text-8xl">child_care</span>
@@ -749,7 +748,7 @@ export default function PrivacyContent() {
                 <span className="font-bold text-sm">Age Safeguard Warning</span>
               </div>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
-                Voice Labs is not intended for children under the age of **13**. We do not knowingly collect or request personal information from children.
+                Voice Labss is not intended for children under the age of **13**. We do not knowingly collect or request personal information from children.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
                 If we become aware that we have inadvertently collected information from a child under 13, we will take immediate steps to delete all such data promptly from our secure databases.
@@ -769,7 +768,7 @@ export default function PrivacyContent() {
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">13</span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Policy Updates</h2>
             </div>
-            
+
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                 We reserve the right to modify, revise, or update this Privacy Policy at any time.
@@ -779,7 +778,7 @@ export default function PrivacyContent() {
                   • Changes become effective **immediately** upon publication within the application or website.
                 </p>
                 <p>
-                  • Continued use of Voice Labs after updates are posted constitutes your explicit acceptance of the revised Privacy Policy.
+                  • Continued use of Voice Labss after updates are posted constitutes your explicit acceptance of the revised Privacy Policy.
                 </p>
               </div>
             </div>
@@ -797,18 +796,18 @@ export default function PrivacyContent() {
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">15</span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Contact Information</h2>
             </div>
-            
+
             <div className="p-8 rounded-2xl bg-primary/5 border border-primary/10 text-center space-y-6 relative overflow-hidden">
               <div className="absolute -top-12 -left-12 w-32 h-32 bg-primary/5 rounded-full blur-xl"></div>
               <div className="absolute -bottom-12 -right-12 w-32 h-32 bg-primary/5 rounded-full blur-xl"></div>
-              
+
               <h4 className="text-xl font-extrabold text-[#131118] dark:text-white">
                 Privacy Concerns or Legal Requests?
               </h4>
               <p className="text-sm text-[#6b608a] dark:text-[#a097bd] max-w-lg mx-auto">
                 For general privacy concerns, data collection inquiries, legal requests, or account-related inquiries, please contact our support team.
               </p>
-              
+
               <div className="inline-flex items-center gap-3 px-6 py-4 bg-white dark:bg-[#120F20] border border-gray-100 dark:border-gray-800 rounded-2xl shadow-sm">
                 <span className="material-symbols-outlined text-primary text-2xl">mail</span>
                 <div className="text-left">
@@ -836,14 +835,14 @@ export default function PrivacyContent() {
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">16</span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Acceptance of Policy</h2>
             </div>
-            
+
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
               <div className="flex items-start gap-4">
                 <span className="material-symbols-outlined text-primary bg-primary/10 p-2.5 rounded-xl">assignment_turned_in</span>
                 <div className="space-y-2">
                   <h4 className="font-extrabold text-[#131118] dark:text-white text-base">Acknowledgment & Agreement</h4>
                   <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
-                    By using **Voice Labs – AI Voice Changer**, you acknowledge that you have read, understood, and agreed to be bound by all guidelines, procedures, and practices detailed in this Privacy Policy.
+                    By using **Voice Labss – AI Voice Changer**, you acknowledge that you have read, understood, and agreed to be bound by all guidelines, procedures, and practices detailed in this Privacy Policy.
                   </p>
                 </div>
               </div>

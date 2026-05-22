@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Voice Lab | Professional AI Voice Studio",
+  title: "Voice Labs | Professional AI Voice Studio",
   description: "Transform your audio projects with advanced AI. Studio-grade Text-to-Speech, real-time Voice Changing, and cinematic Sound Effects.",
 };
 

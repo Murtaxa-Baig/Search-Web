@@ -35,7 +35,7 @@ export default function TermsContent() {
             title: "1. Acceptance of Agreement",
             content: (
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                By accessing or using Voice Lab (“Service”), you agree to be
+                By accessing or using Voice Labs (“Service”), you agree to be
                 legally bound by these Terms & Conditions. If you disagree with
                 any provision, you must immediately cease use of the Service.
               </p>
@@ -50,7 +50,7 @@ export default function TermsContent() {
                   <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">
                     “Platform”:
                   </span>
-                  <span>Refers to the Voice Lab website and applications.</span>
+                  <span>Refers to the Voice Labs website and applications.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">
@@ -77,7 +77,7 @@ export default function TermsContent() {
             content: (
               <>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                  Voice Lab provides AI-driven audio services including Text-to-Speech (TTS), Voice Changing, Sound Effects generation, Audio Downloading, and Sharing capabilities.
+                  Voice Labs provides AI-driven audio services including Text-to-Speech (TTS), Voice Changing, Sound Effects generation, Audio Downloading, and Sharing capabilities.
                 </p>
               </>
             ),
@@ -120,7 +120,7 @@ export default function TermsContent() {
             content: (
               <div className="space-y-4 text-gray-600 dark:text-gray-400">
                 <p className="leading-relaxed">
-                  Voice Lab owns the AI models, software, and brand. You retain ownership of the specific audio content you generate, subject to these terms.
+                  Voice Labs owns the AI models, software, and brand. You retain ownership of the specific audio content you generate, subject to these terms.
                 </p>
               </div>
             ),
@@ -131,7 +131,7 @@ export default function TermsContent() {
             content: (
               <>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  To the maximum extent permitted by law, Voice Lab shall not be
+                  To the maximum extent permitted by law, Voice Labs shall not be
                   liable for:
                 </p>
                 <ul className="space-y-2 text-gray-600 dark:text-gray-400 pl-4">
