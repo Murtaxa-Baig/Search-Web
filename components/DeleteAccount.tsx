@@ -71,11 +71,10 @@ export default function DeleteAccount() {
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 20 }}
                         exit={{ opacity: 0, y: -50 }}
-                        className={`fixed top-4 left-1/2 -translate-x-1/2 z-[100] px-6 py-3 rounded-xl shadow-2xl flex items-center gap-3 border ${
-                            toast.type === "success" 
-                                ? "bg-emerald-500 border-emerald-400 text-white" 
+                        className={`fixed top-4 left-1/2 -translate-x-1/2 z-[100] px-6 py-3 rounded-xl shadow-2xl flex items-center gap-3 border ${toast.type === "success"
+                                ? "bg-emerald-500 border-emerald-400 text-white"
                                 : "bg-red-500 border-red-400 text-white"
-                        }`}
+                            }`}
                     >
                         <span className="material-symbols-outlined">
                             {toast.type === "success" ? "check_circle" : "error"}
@@ -189,23 +188,23 @@ export default function DeleteAccount() {
                                                 required
                                             />
                                         </label>
-                                        
+
                                         <label className="flex flex-col w-full">
                                             <p className="text-[#131118] dark:text-white text-sm font-semibold leading-normal pb-2">
                                                 Reason for leaving
                                             </p>
-                                            <select 
+                                            <select
                                                 value={reason}
                                                 onChange={(e) => setReason(e.target.value)}
                                                 className="form-input flex w-full rounded-lg text-[#131118] dark:text-gray-200 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 h-12 appearance-none px-4 text-sm font-normal leading-normal"
                                                 required
                                             >
                                                 <option value="">Select a reason</option>
-                                                <option value="too-expensive">Pricing is too high</option>
-                                                <option value="missing-features">Missing specific features</option>
-                                                <option value="switching">Switching to a competitor</option>
-                                                <option value="no-longer-need">I no longer need the service</option>
-                                                <option value="hard-to-use">Platform is too difficult to use</option>
+                                                <option value="Pricing is too high">Pricing is too high</option>
+                                                <option value="Missing specific features">Missing specific features</option>
+                                                <option value="Switching to a competitor">Switching to a competitor</option>
+                                                <option value="I no longer need the service">I no longer need the service</option>
+                                                <option value="Platform is too difficult to use">Platform is too difficult to use</option>
                                                 <option value="other">Other (Please specify)</option>
                                             </select>
                                         </label>
@@ -245,14 +244,13 @@ export default function DeleteAccount() {
                                             />
                                         </label>
                                     </div>
-                                    
+
                                     <div className="flex flex-col gap-3 pt-6">
-                                        <button 
+                                        <button
                                             onClick={handleDeleteClick}
                                             disabled={isLoading || !isFormValid}
-                                            className={`w-full flex items-center justify-center rounded-xl h-14 px-8 bg-red-600 text-white hover:bg-red-700 text-base font-bold leading-normal transition-all shadow-lg shadow-red-600/20 active:scale-[0.98] ${
-                                                isLoading || !isFormValid ? "opacity-50 cursor-not-allowed shadow-none" : ""
-                                            }`}
+                                            className={`w-full flex items-center justify-center rounded-xl h-14 px-8 bg-red-600 text-white hover:bg-red-700 text-base font-bold leading-normal transition-all shadow-lg shadow-red-600/20 active:scale-[0.98] ${isLoading || !isFormValid ? "opacity-50 cursor-not-allowed shadow-none" : ""
+                                                }`}
                                         >
                                             {isLoading ? (
                                                 <div className="flex items-center gap-2">
@@ -322,7 +320,7 @@ export default function DeleteAccount() {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-3 pt-4 justify-center">
-                                <Link 
+                                <Link
                                     href="/delete-account/confirm"
                                     className="px-6 py-3 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/20 hover:opacity-90 transition-all text-sm flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98]"
                                 >
