@@ -83,7 +83,7 @@ export default function PrivacyContent() {
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm">
           <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
             <span className="material-symbols-outlined text-base">calendar_today</span>
-            <span>Last Updated: <span className="font-semibold text-gray-800 dark:text-gray-200">May 21, 2026</span></span>
+            <span>Last Updated: <span className="font-semibold text-gray-800 dark:text-gray-200">June 2, 2026</span></span>
           </div>
           <span className="hidden sm:inline text-gray-300 dark:text-gray-700">|</span>
           <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
@@ -436,7 +436,7 @@ export default function PrivacyContent() {
                   <div className="flex items-start gap-3">
                     <span className="material-symbols-outlined text-yellow-500 text-sm mt-0.5">check_circle</span>
                     <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                      Users can manage or cancel subscriptions anytime from their device's account settings.
+                      Users can manage or cancel subscriptions anytime from their device&apos;s account settings.
                     </p>
                   </div>
                 </div>
@@ -556,7 +556,7 @@ export default function PrivacyContent() {
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="space-y-4"
+            className="space-y-6"
           >
             <div className="flex items-center gap-3">
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">7</span>
@@ -581,6 +581,56 @@ export default function PrivacyContent() {
                 <p>
                   All trademarks, service marks, product names, and company names belong to their respective owners. Any information processed through ElevenLabs services is strictly subject to ElevenLabs’ own privacy practices and policies.
                 </p>
+              </div>
+            </div>
+
+            {/* AI Voice & Audio Processing Details Card */}
+            <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-6">
+              <div className="flex items-center gap-3 text-primary">
+                <span className="material-symbols-outlined p-2 rounded-xl bg-primary/10">settings_voice</span>
+                <h3 className="font-bold text-lg text-[#131118] dark:text-white">AI Voice & Audio Processing Details</h3>
+              </div>
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                To provide our AI voice features, we process voice data and audio inputs in partnership with ElevenLabs under strict privacy guidelines:
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+                <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-1">
+                  <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Data Sent</span>
+                  <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                    Voice recordings, audio input, and text prompts (as needed to process your request).
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-1">
+                  <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Purpose</span>
+                  <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                    To generate speech/audio outputs and provide AI-powered app functionality.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-1">
+                  <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Shared With</span>
+                  <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                    ElevenLabs (third-party AI voice processing provider) solely to process the audio and generate results.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-1">
+                  <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">User Consent</span>
+                  <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                    Data is shared only when you actively use voice/AI features and provide necessary permissions.
+                  </p>
+                </div>
+
+                <div className="col-span-1 md:col-span-2 p-4 rounded-xl bg-primary/5 border border-primary/10 space-y-1">
+                  <span className="text-xs font-bold text-primary uppercase tracking-wider flex items-center gap-1.5">
+                    <span className="material-symbols-outlined text-sm">security</span> Data Protection
+                  </span>
+                  <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                    We do not sell personal data. ElevenLabs processes data only for service delivery and is required to follow strict privacy and security standards.
+                  </p>
+                </div>
               </div>
             </div>
           </motion.section>
