@@ -34,7 +34,7 @@ export async function POST(request: Request) {
 
         const info = await transporter.sendMail({
             from: `"Contact Form" <${email}>`,
-            to: process.env.GMAIL_USER || `appnayatechmologies@gmail.com`,
+            to: process.env.GMAIL_USER || `supportappnaya@gmail.com`,
             replyTo: email,
             subject: `New Message from ${firstName} ${lastName}: ${subject || 'No Subject'}`,
             html,

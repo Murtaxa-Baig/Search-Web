@@ -91,9 +91,9 @@ export default function PrivacyContent() {
             <span>Contact Email: </span>
             <a
               className="text-primary font-semibold hover:underline"
-              href="mailto:Appnayatecnologoes@gmail.com"
+              href="mailto:supportappnaya@gmail.com"
             >
-              Appnayatecnologoes@gmail.com
+              supportappnaya@gmail.com
             </a>
           </div>
         </div>
@@ -133,7 +133,7 @@ export default function PrivacyContent() {
                 If you have questions about this policy or your data rights, our privacy officer is ready to help.
               </p>
               <a
-                href="mailto:Appnayatecnologoes@gmail.com"
+                href="mailto:supportappnaya@gmail.com"
                 className="inline-flex items-center justify-center w-full gap-2 px-4 py-2.5 bg-white text-primary rounded-xl text-xs font-bold shadow-md hover:bg-opacity-95 transition-all"
               >
                 <span className="material-symbols-outlined text-sm">mail</span>
@@ -733,7 +733,7 @@ export default function PrivacyContent() {
 
               <p className="text-xs text-gray-500 text-center dark:text-gray-400">
                 To initiate any data rights requests, please submit your request to our support email:
-                <a className="text-primary font-bold ml-1 hover:underline text-sm" href="mailto:Appnayatecnologoes@gmail.com">Appnayatecnologoes@gmail.com</a>.
+                <a className="text-primary font-bold ml-1 hover:underline text-sm" href="mailto:supportappnaya@gmail.com">supportappnaya@gmail.com</a>.
               </p>
             </div>
           </motion.section>
@@ -863,10 +863,10 @@ export default function PrivacyContent() {
                 <div className="text-left">
                   <span className="block text-[10px] text-gray-400 font-bold uppercase tracking-wider">Email Address</span>
                   <a
-                    href="mailto:Appnayatecnologoes@gmail.com"
+                    href="mailto:supportappnaya@gmail.com"
                     className="text-base font-extrabold text-[#131118] dark:text-white hover:text-primary dark:hover:text-primary transition-colors"
                   >
-                    Appnayatecnologoes@gmail.com
+                    supportappnaya@gmail.com
                   </a>
                 </div>
               </div>
