@@ -35,7 +35,7 @@ export default function TermsContent() {
             title: "1. Acceptance of Agreement",
             content: (
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                By accessing or using Voice Labs (“Service”), you agree to be
+                By accessing or using Nano Ai (“Service”), you agree to be
                 legally bound by these Terms & Conditions. If you disagree with
                 any provision, you must immediately cease use of the Service.
               </p>
@@ -50,7 +50,7 @@ export default function TermsContent() {
                   <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">
                     “Platform”:
                   </span>
-                  <span>Refers to the Voice Labs website and applications.</span>
+                  <span>Refers to the Nano Ai website and applications.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">
@@ -62,10 +62,10 @@ export default function TermsContent() {
                 </li>
                 <li className="flex gap-3">
                   <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">
-                    “Audio Content”:
+                    “Generated Content”:
                   </span>
                   <span>
-                    Refers to any recordings, generated voices, or sound effects created using the Service.
+                    Refers to any images, graphics, upscaled layouts, or prompt-based custom artwork created using the Service.
                   </span>
                 </li>
               </ul>
@@ -77,14 +77,31 @@ export default function TermsContent() {
             content: (
               <>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                  Voice Labs provides AI-driven audio services including Text-to-Speech (TTS), Voice Changing, Sound Effects generation, Audio Downloading, and Sharing capabilities.
+                  Nano Ai provides AI-driven image generation and enhancement services, including prompt-based image creation, quality resolution upscaling, curated prompt libraries, image upload manipulation, and sharing capabilities.
                 </p>
               </>
             ),
           },
           {
+            id: "subscriptions",
+            title: "4. Subscriptions, Trials, and Tokens",
+            content: (
+              <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+                <p>
+                  Nano Ai offers a token-based subscription system (weekly and monthly auto-renewable plans). Tokens are used as currency to run image generation and quality upscaling processes.
+                </p>
+                <p>
+                  New users are eligible for a **3-day free trial** of the subscription plan, allowing full access to explore the complete potential of Nano Ai before charging begins.
+                </p>
+                <p>
+                  You have the explicit right to cancel your subscription at any time. When canceled, your subscription tokens remain valid for usage until the end of the current billing cycle.
+                </p>
+              </div>
+            ),
+          },
+          {
             id: "usage",
-            title: "4. Acceptable Use Policy",
+            title: "5. Acceptable Use Policy",
             content: (
               <>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
@@ -93,8 +110,8 @@ export default function TermsContent() {
                 <div className="grid md:grid-cols-2 gap-3">
                   {[
                     "Generate content that is illegal, defamatory, or harmful",
-                    "Use the Service to impersonate individuals without consent",
-                    "Create audio that incites violence or hatred",
+                    "Use the Service to generate deepfakes of individuals without consent",
+                    "Create images that incite violence, hatred, or harassment",
                     "Attempt to reverse engineer the AI models",
                     "Infringe upon third-party intellectual property",
                   ].map((item, i) => (
@@ -116,27 +133,27 @@ export default function TermsContent() {
           },
           {
             id: "intellectual",
-            title: "5. Intellectual Property",
+            title: "6. Intellectual Property",
             content: (
               <div className="space-y-4 text-gray-600 dark:text-gray-400">
                 <p className="leading-relaxed">
-                  Voice Labs owns the AI models, software, and brand. You retain ownership of the specific audio content you generate, subject to these terms.
+                  Nano Ai owns the AI models, software, and brand. You retain ownership of the specific image content you generate, subject to these terms.
                 </p>
               </div>
             ),
           },
           {
             id: "liability",
-            title: "6. Limitation of Liability",
+            title: "7. Limitation of Liability",
             content: (
               <>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  To the maximum extent permitted by law, Voice Labs shall not be
+                  To the maximum extent permitted by law, Nano Ai shall not be
                   liable for:
                 </p>
                 <ul className="space-y-2 text-gray-600 dark:text-gray-400 pl-4">
                   <li>• Indirect or consequential damages</li>
-                  <li>• Misuse of generated audio content by the user</li>
+                  <li>• Misuse of generated image content by the user</li>
                   <li>• Technical interruptions or data loss</li>
                 </ul>
               </>
@@ -144,7 +161,7 @@ export default function TermsContent() {
           },
           {
             id: "contact",
-            title: "7. Contact Information",
+            title: "8. Contact Information",
             content: (
               <div className="text-center p-8 rounded-2xl bg-primary/5 border border-primary/10">
                 <h4 className="text-xl font-bold text-[#131118] dark:text-white mb-2">

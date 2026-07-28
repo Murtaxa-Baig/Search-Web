@@ -26,7 +26,7 @@ export default function CTASection() {
                             transition={{ delay: 0.2 }}
                             className="text-4xl md:text-5xl font-black mb-6"
                         >
-                            Ready to Elevate Your Audio Identity?
+                            Ready to Elevate Your Visual Creative Identity?
                         </motion.h2>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
@@ -35,7 +35,7 @@ export default function CTASection() {
                             transition={{ delay: 0.3 }}
                             className="text-xl opacity-90 mb-10 max-w-2xl mx-auto font-medium"
                         >
-                            Experience the future of voice synthesis. Design professional-grade audio projects instantly with our suite of 5 advanced AI tools. Start your high-fidelity journey today.
+                            Experience the future of AI image generation and enhancement. Design professional-grade visual projects instantly with our advanced AI tools. Start your creative journey today.
                         </motion.p>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}

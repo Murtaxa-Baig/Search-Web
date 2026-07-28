@@ -164,7 +164,7 @@ function DeleteConfirmFormContent() {
                                 Confirm Your Account Deletion
                             </h1>
                             <p className="text-gray-500 dark:text-gray-400 text-base">
-                                Verify your identity to permanently remove your Voice Labs profile.
+                                Verify your identity to permanently remove your Nano Ai profile.
                             </p>
                         </div>
 
@@ -178,7 +178,7 @@ function DeleteConfirmFormContent() {
                                     CRITICAL WARNING
                                 </h3>
                                 <p className="text-xs text-red-700 dark:text-red-400 leading-relaxed">
-                                    This action is permanent and completely irreversible. All your custom voices, cloned profiles, sound effect creations, history, and active subscriptions will be deleted immediately.
+                                    This action is permanent and completely irreversible. All your generated images, enhanced photos, saved prompt collections, history, and active subscriptions will be deleted immediately.
                                 </p>
                             </div>
                         </div>

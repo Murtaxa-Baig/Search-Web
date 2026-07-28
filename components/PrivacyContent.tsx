@@ -7,10 +7,10 @@ const sections = [
   { id: "introduction", label: "1. Introduction" },
   { id: "information-collect", label: "2. Information We Collect" },
   { id: "how-we-use", label: "3. How We Use Your Information" },
-  { id: "subscription-credits", label: "4. Subscription & Credits Policy" },
+  { id: "subscription-credits", label: "4. Subscription & Token Policy" },
   { id: "legal-basis", label: "5. Legal Basis for Processing" },
   { id: "third-party", label: "6. Third-Party Services" },
-  { id: "elevenlabs-disclaimer", label: "7. ElevenLabs Disclaimer" },
+  { id: "elevenlabs-disclaimer", label: "7. AI Providers Disclaimer" },
   { id: "data-retention", label: "8. Data Retention" },
   { id: "international-transfers", label: "9. International Transfers" },
   { id: "user-rights", label: "10. User Rights" },
@@ -78,7 +78,7 @@ export default function PrivacyContent() {
           Privacy Policy
         </h1>
         <p className="text-[#6b608a] dark:text-[#a097bd] text-lg md:text-xl font-normal leading-relaxed max-w-3xl mb-8">
-          Voice Labss – AI Voice Changer is dedicated to maintaining transparent information about how we collect, use, process, and protect your data while using our AI-powered voice technologies.
+          Nano Ai is dedicated to maintaining transparent information about how we collect, use, process, and protect your data while using our AI-powered image technologies.
         </p>
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm">
           <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
@@ -160,10 +160,10 @@ export default function PrivacyContent() {
             </div>
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                This Privacy Policy explains how **Voice Labss – AI Voice Changer** collects, uses, stores, and protects user information when using our mobile application, website, and AI voice services.
+                This Privacy Policy explains how **Nano Ai** collects, uses, stores, and protects user information when using our mobile application, website, and AI image services.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                By using Voice Labss, you agree to the practices described in this Privacy Policy.
+                By using Nano Ai, you agree to the practices described in this Privacy Policy.
               </p>
             </div>
           </motion.section>
@@ -214,11 +214,11 @@ export default function PrivacyContent() {
                 <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-purple"></span>
-                    <span>Voice generation activity</span>
+                    <span>Image generation and enhancement activity</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-purple"></span>
-                    <span>Credits usage</span>
+                    <span>Tokens usage</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-purple"></span>
@@ -235,52 +235,57 @@ export default function PrivacyContent() {
                 </ul>
               </div>
 
-              {/* Audio & Content Data */}
+              {/* Image & Content Data */}
               <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
                 <div className="flex items-center gap-3 text-brand-blue">
-                  <span className="material-symbols-outlined p-2 rounded-xl bg-brand-blue/10">audio_file</span>
-                  <h3 className="font-bold text-lg text-[#131118] dark:text-white">Audio & Content Data</h3>
+                  <span className="material-symbols-outlined p-2 rounded-xl bg-brand-blue/10">image</span>
+                  <h3 className="font-bold text-lg text-[#131118] dark:text-white">Image & Content Data</h3>
                 </div>
                 <p className="text-xs text-gray-500">Depending on the feature used, we may temporarily process:</p>
                 <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>
-                    <span>Text entered for Text-to-Speech generation</span>
+                    <span>Text prompts entered for AI image generation</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>
-                    <span>Uploaded voice recordings</span>
+                    <span>Uploaded source images for quality enhancement or generation</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>
-                    <span>AI-generated voice outputs</span>
+                    <span>AI-generated image outputs</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>
-                    <span>Sound effect prompts</span>
+                    <span>Saved prompt templates & collections</span>
                   </li>
                 </ul>
               </div>
 
-              {/* Media & Device Permissions */}
+              {/* Media, Location & Device Permissions */}
               <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
                 <div className="flex items-center gap-3 text-green-500">
                   <span className="material-symbols-outlined p-2 rounded-xl bg-green-500/10">photo_library</span>
                   <h3 className="font-bold text-lg text-[#131118] dark:text-white">Media & Device Permissions</h3>
                 </div>
-                <p className="text-xs text-gray-500">With your permission, Voice Labss may access:</p>
+                <p className="text-xs text-gray-500">With your permission, Nano Ai may access:</p>
                 <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-2">
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
-                    <span>Photos and media files</span>
+                    <span>Photos, gallery, and media library files</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
-                    <span>Device gallery/images</span>
+                    <span>Location data (approximate and precise)</span>
                   </li>
                 </ul>
-                <div className="p-3 bg-green-500/5 rounded-xl border border-green-500/10 text-xs text-green-600 dark:text-green-400 leading-relaxed">
-                  <strong>Access scope:</strong> Used solely for updating profile pictures and account personalization. We do not access your files without explicit permission, and we never sell or publicly share your personal images.
+                <div className="p-3 bg-green-500/5 rounded-xl border border-green-500/10 text-xs text-green-600 dark:text-green-400 leading-relaxed space-y-2">
+                  <p>
+                    <strong>Media Library Access:</strong> Used solely for updating user profile pictures and uploading image sources for quality enhancement or prompt-based generation.
+                  </p>
+                  <p>
+                    <strong>Location Access:</strong> Required to enable location-based features, customized regional visual trends, and stylized generation presets. We protect your data and never sell or publicly share your location or images.
+                  </p>
                 </div>
               </div>
 
@@ -308,11 +313,11 @@ export default function PrivacyContent() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
                   { text: "Create and manage user accounts", icon: "manage_accounts" },
-                  { text: "Process AI voice generations", icon: "settings_voice" },
-                  { text: "Provide AI Voice Changer features", icon: "swap_calls" },
-                  { text: "Generate AI sound effects", icon: "volume_up" },
+                  { text: "Process AI image generations", icon: "image" },
+                  { text: "Provide AI Image Quality Enhancer features", icon: "auto_awesome" },
+                  { text: "Deliver localized, location-based trends & presets", icon: "location_on" },
                   { text: "Manage subscriptions and billing", icon: "credit_card" },
-                  { text: "Track credits usage", icon: "toll" },
+                  { text: "Track token usage", icon: "toll" },
                   { text: "Improve app performance and reliability", icon: "speed" },
                   { text: "Prevent fraud, abuse, or unauthorized access", icon: "shield_lock" },
                   { text: "Provide customer support and technical assistance", icon: "contact_support" },
@@ -336,26 +341,26 @@ export default function PrivacyContent() {
           >
             <div className="flex items-center gap-3">
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">4</span>
-              <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Subscription & Credits Policy</h2>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Subscription & Token Policy</h2>
             </div>
 
             <div className="space-y-6">
-              {/* Grid 1: Credits & Subscription Plans */}
+              {/* Grid 1: Tokens & Subscription Plans */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                {/* Free Credits */}
+                {/* Free Trial */}
                 <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -mr-8 -mt-8"></div>
                   <div className="flex items-center gap-3 text-primary mb-3">
                     <span className="material-symbols-outlined">stars</span>
-                    <h3 className="font-bold text-lg text-[#131118] dark:text-white">Free Credits</h3>
+                    <h3 className="font-bold text-lg text-[#131118] dark:text-white">3-Day Free Trial</h3>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                    Voice Labss provides:
+                    Nano Ai provides:
                   </p>
                   <div className="p-4 rounded-xl bg-primary/5 border border-primary/10 text-center">
-                    <div className="text-3xl font-black text-primary">300 Credits</div>
-                    <div className="text-xs text-[#6b608a] dark:text-[#a097bd] mt-1">For Text-to-Speech (New Users)</div>
+                    <div className="text-3xl font-black text-primary">3-Day Free Trial</div>
+                    <div className="text-xs text-[#6b608a] dark:text-[#a097bd] mt-1">Explore Full Potential (Complimentary Tokens)</div>
                   </div>
                 </div>
 
@@ -367,7 +372,7 @@ export default function PrivacyContent() {
                     <h3 className="font-bold text-lg text-[#131118] dark:text-white">Subscription Plans</h3>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                    We offer auto-renewable plans:
+                    We offer auto-renewable token plans:
                   </p>
                   <div className="grid grid-cols-2 gap-3">
                     <div className="p-3 bg-brand-purple/5 border border-brand-purple/10 rounded-xl text-center">
@@ -378,7 +383,7 @@ export default function PrivacyContent() {
                     </div>
                   </div>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mt-4">
-                    These subscriptions automatically renew unless canceled through your App Store or Google Play account settings.
+                    Subscriptions renew automatically unless canceled through App Store or Google Play account settings.
                   </p>
                 </div>
 
@@ -393,16 +398,16 @@ export default function PrivacyContent() {
 
                 <div className="space-y-4">
                   <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-2">
-                    <h4 className="font-bold text-sm text-[#131118] dark:text-white">Text-to-Speech</h4>
+                    <h4 className="font-bold text-sm text-[#131118] dark:text-white">Token-Based AI Usage</h4>
                     <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                      Users may use free credits, purchase additional credits, or subscribe to premium plans for higher generation limits. Extra purchased credits can **only** be used for Text-to-Speech generation.
+                      AI Image Generation and Quality Enhancement features consume tokens. Subscriptions grant users a recurring token balance. Additional tokens can be acquired directly within the application to expand limits.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-2">
-                    <h4 className="font-bold text-sm text-[#131118] dark:text-white">AI Voice Changer & AI Sound Effects</h4>
+                    <h4 className="font-bold text-sm text-[#131118] dark:text-white">Subscription Cancellation</h4>
                     <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                      These premium features require an **active auto-renewable subscription plan**. Additional purchased credits **cannot** be used for AI Voice Changer or AI Sound Effects unless explicitly stated within the app.
+                      Users can cancel their subscription at any time. When canceled, subscription tokens remain valid for usage until the end of the current billing cycle, after which further recurring token grants cease.
                     </p>
                   </div>
                 </div>
@@ -466,7 +471,7 @@ export default function PrivacyContent() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {[
                   { label: "User Consent", desc: "Given when enabling device permissions or submitting details.", icon: "done_all" },
-                  { label: "Contractual Necessity", desc: "Required to deliver voice generation services.", icon: "handshake" },
+                  { label: "Contractual Necessity", desc: "Required to deliver image generation services.", icon: "handshake" },
                   { label: "Legitimate Interests", desc: "Improving platform security, performance & reliability.", icon: "troubleshoot" },
                   { label: "Legal Compliance", desc: "Meeting legal records, audits, or regulatory demands.", icon: "gavel" }
                 ].map((basis, idx) => (
@@ -501,14 +506,14 @@ export default function PrivacyContent() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                  {/* ElevenLabs */}
+                  {/* AI Image Engines */}
                   <div className="p-5 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h4 className="font-bold text-base text-[#131118] dark:text-white">ElevenLabs</h4>
-                      <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-blue-500/10 text-blue-500">AI Voice</span>
+                      <h4 className="font-bold text-base text-[#131118] dark:text-white">AI Image Engines</h4>
+                      <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-blue-500/10 text-blue-500">AI Processing</span>
                     </div>
                     <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                      Used for state-of-the-art AI voice generation and voice processing. Any data processed through ElevenLabs is governed by their own privacy policies and terms.
+                      Used for state-of-the-art AI image generation and enhancement. Any data processed through our AI providers (such as Stability AI, OpenAI) is governed by their own privacy policies and terms.
                     </p>
                   </div>
 
@@ -550,7 +555,7 @@ export default function PrivacyContent() {
             </div>
           </motion.section>
 
-          {/* Section 7: Disclaimer Regarding ElevenLabs */}
+          {/* Section 7: Disclaimer Regarding Third-Party AI Providers */}
           <motion.section
             id="elevenlabs-disclaimer"
             initial={{ opacity: 0, y: 15 }}
@@ -560,7 +565,7 @@ export default function PrivacyContent() {
           >
             <div className="flex items-center gap-3">
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">7</span>
-              <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Disclaimer Regarding ElevenLabs</h2>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Disclaimer Regarding Third-Party AI Providers</h2>
             </div>
 
             <div className="p-6 rounded-2xl bg-amber-500/5 dark:bg-amber-500/5 border border-amber-500/20 shadow-sm space-y-4 relative overflow-hidden">
@@ -573,53 +578,53 @@ export default function PrivacyContent() {
               </div>
               <div className="space-y-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
-                  Voice Labss – AI Voice Changer is built using advanced AI technologies powered in part by **ElevenLabs** services.
+                  Nano Ai is built using advanced AI technologies powered in part by third-party AI image generators and enhancement engines (such as OpenAI and Stability AI).
                 </p>
                 <p className="font-semibold text-gray-800 dark:text-gray-200">
-                  We are not affiliated with, endorsed by, or officially associated with ElevenLabs.
+                  We are not affiliated with, endorsed by, or officially associated with these third-party AI service providers.
                 </p>
                 <p>
-                  All trademarks, service marks, product names, and company names belong to their respective owners. Any information processed through ElevenLabs services is strictly subject to ElevenLabs’ own privacy practices and policies.
+                  All trademarks, service marks, product names, and company names belong to their respective owners. Any information processed through third-party services is strictly subject to their own privacy practices and policies.
                 </p>
               </div>
             </div>
 
-            {/* AI Voice & Audio Processing Details Card */}
+            {/* AI Image Processing Details Card */}
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-6">
               <div className="flex items-center gap-3 text-primary">
-                <span className="material-symbols-outlined p-2 rounded-xl bg-primary/10">settings_voice</span>
-                <h3 className="font-bold text-lg text-[#131118] dark:text-white">AI Voice & Audio Processing Details</h3>
+                <span className="material-symbols-outlined p-2 rounded-xl bg-primary/10">image</span>
+                <h3 className="font-bold text-lg text-[#131118] dark:text-white">AI Image Processing Details</h3>
               </div>
               <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                To provide our AI voice features, we process voice data and audio inputs in partnership with ElevenLabs under strict privacy guidelines:
+                To provide our AI image generation and enhancement features, we process text prompts and uploaded source images in partnership with third-party providers under strict privacy guidelines:
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
                 <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-1">
                   <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Data Sent</span>
                   <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
-                    Voice recordings, audio input, and text prompts (as needed to process your request).
+                    Uploaded source images, text prompts, and generation configuration parameters.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-1">
                   <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Purpose</span>
                   <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
-                    To generate speech/audio outputs and provide AI-powered app functionality.
+                    To generate visual art, upscale resolutions, enhance photo clarity, and deliver visual outputs.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-1">
                   <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Shared With</span>
                   <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
-                    ElevenLabs (third-party AI voice processing provider) solely to process the audio and generate results.
+                    Third-party AI image processing providers (solely to process and generate results).
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-1">
                   <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">User Consent</span>
                   <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
-                    Data is shared only when you actively use voice/AI features and provide necessary permissions.
+                    Data is shared only when you actively trigger visual generation or enhancement features.
                   </p>
                 </div>
 
@@ -628,7 +633,7 @@ export default function PrivacyContent() {
                     <span className="material-symbols-outlined text-sm">security</span> Data Protection
                   </span>
                   <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
-                    We do not sell personal data. ElevenLabs processes data only for service delivery and is required to follow strict privacy and security standards.
+                    We do not sell personal data. Our partners process data only for service delivery and are required to follow strict privacy and security standards.
                   </p>
                 </div>
               </div>
@@ -667,7 +672,7 @@ export default function PrivacyContent() {
                 ))}
               </div>
               <div className="p-4 bg-primary/5 rounded-xl border border-primary/10 text-xs text-primary leading-relaxed">
-                <strong>Audio generation cleanup:</strong> Temporary raw audio recordings or AI outputs may be automatically deleted immediately after completion of processing. Users maintain the absolute right to request full account deletion at any time.
+                <strong>Image generation cleanup:</strong> Temporary uploaded source images or generated visual outputs are automatically deleted from intermediate processing servers immediately after completion. Users maintain the absolute right to request full account deletion at any time.
               </div>
             </div>
           </motion.section>
@@ -753,7 +758,7 @@ export default function PrivacyContent() {
 
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Voice Labss may implement standard technical tracking and performance technologies:
+                Nano Ai may implement standard technical tracking and performance technologies:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -798,7 +803,7 @@ export default function PrivacyContent() {
                 <span className="font-bold text-sm">Age Safeguard Warning</span>
               </div>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
-                Voice Labss is not intended for children under the age of **13**. We do not knowingly collect or request personal information from children.
+                Nano Ai is not intended for children under the age of **13**. We do not knowingly collect or request personal information from children.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
                 If we become aware that we have inadvertently collected information from a child under 13, we will take immediate steps to delete all such data promptly from our secure databases.
@@ -828,7 +833,7 @@ export default function PrivacyContent() {
                   • Changes become effective **immediately** upon publication within the application or website.
                 </p>
                 <p>
-                  • Continued use of Voice Labss after updates are posted constitutes your explicit acceptance of the revised Privacy Policy.
+                  • Continued use of Nano Ai after updates are posted constitutes your explicit acceptance of the revised Privacy Policy.
                 </p>
               </div>
             </div>
@@ -892,7 +897,7 @@ export default function PrivacyContent() {
                 <div className="space-y-2">
                   <h4 className="font-extrabold text-[#131118] dark:text-white text-base">Acknowledgment & Agreement</h4>
                   <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
-                    By using **Voice Labss – AI Voice Changer**, you acknowledge that you have read, understood, and agreed to be bound by all guidelines, procedures, and practices detailed in this Privacy Policy.
+                    By using **Nano Ai**, you acknowledge that you have read, understood, and agreed to be bound by all guidelines, procedures, and practices detailed in this Privacy Policy.
                   </p>
                 </div>
               </div>

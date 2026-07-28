@@ -9,10 +9,10 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Logo size={36} />
-              <span className="text-xl font-bold">Voice Labs</span>
+              <span className="text-xl font-bold">Nano Ai</span>
             </div>
             <p className="text-gray-400 text-sm max-w-xs">
-              The professional AI Voice Studio for creators. Transform, generate, and share high-fidelity audio projects.
+              The ultimate AI image generation and enhancement studio. Transform your prompts and photos with state-of-the-art visual models.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-2 gap-12">

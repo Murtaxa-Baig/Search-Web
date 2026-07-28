@@ -6,15 +6,15 @@ import { motion, AnimatePresence } from "framer-motion";
 const faqs = [
     {
         question: "How do I cancel my subscription?",
-        answer: "You can cancel your subscription at any time through your account settings dashboard under the 'Billing' tab. Your access will remain active until the end of your current billing period.",
+        answer: "You can cancel your subscription at any time through your App Store (iOS) or Google Play Store (Android) account settings, or directly within the app's subscription module. Your access will remain active until the end of your current billing period.",
     },
     {
         question: "Is my data secure?",
-        answer: "Yes, we use industry-standard encryption protocols (SSL/TLS) for all data transfers. We do not store your original text longer than necessary to process your request.",
+        answer: "Yes, we use industry-standard encryption protocols (SSL/TLS) for all data transfers. We only temporarily process your uploaded images and prompts to perform AI enhancement or generation, and we do not store them longer than necessary.",
     },
     {
         question: "Do you offer a free trial?",
-        answer: "Absolutely! Every new user gets 10,000 free tokens to try out all our AI generators. No credit card required to start.",
+        answer: "Absolutely! We offer a 3-day free trial that lets you explore the full potential of Nano Ai. You can try all our AI image generation and quality enhancement tools during this trial period before your subscription starts.",
     },
 ];
 

@@ -15,7 +15,7 @@ export default function AboutHero() {
           >
             Pioneering the <br />
             Future of <br />
-            Sonic Expression
+            AI image Generation
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -23,9 +23,9 @@ export default function AboutHero() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed"
           >
-            We are dedicated to redefining how the world interacts with audio. 
+            We are dedicated to redefining how the world interacts with images. 
             By leveraging state-of-the-art neural networks, we empower creators to 
-            transform their vocal identities and design immersive acoustic experiences.
+            generate stunning visual artwork and enhance image resolutions instantly.
           </motion.p>
         </div>
       </div>

@@ -32,7 +32,7 @@ export default function Navbar() {
               href="/"
               className="text-[#131118] dark:text-white text-xl font-bold tracking-tight truncate"
             >
-              Voice Labs
+              Nano Ai
             </Link>
           </div>
 

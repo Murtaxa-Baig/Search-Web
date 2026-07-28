@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Voice Labs | Professional AI Voice Studio",
-  description: "Transform your audio projects with advanced AI. Studio-grade Text-to-Speech, real-time Voice Changing, and cinematic Sound Effects.",
+  title: "Nano Ai | AI Image Generation & Quality Enhancement Studio",
+  description: "Unleash your creativity with Nano Ai. Generate high-fidelity images from text prompts, enhance photo quality, and explore curated prompt libraries with a 3-day free trial.",
 };
 
 export default function RootLayout({

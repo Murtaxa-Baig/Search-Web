@@ -12,7 +12,7 @@ const milestones = [
     {
         year: "2025",
         title: "1M Users Strong",
-        description: "Our platform reached its first major milestone, helping over a million users worldwide find their voice.",
+        description: "Our platform reached its first major milestone, helping over a million users worldwide express their visual creativity.",
         icon: "groups",
     },
     {

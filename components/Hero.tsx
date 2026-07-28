@@ -12,12 +12,10 @@ export default function Hero() {
         className="w-full max-w-4xl"
       >
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#131118] dark:text-white leading-[1.1] mb-8 tracking-tight mx-auto">
-          Professional AI Voice Studio at Your Fingertips
+          AI Image Generation & Quality Enhancement Studio
         </h1>
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Unlock a new dimension of audio creation. Experience industry-leading Neural Text-to-Speech, 
-          real-time Voice Transformation, and a cinematic library of Sound Effects. 
-          Built for creators who demand high-fidelity output and seamless collaboration.
+          Unleash your creativity with Nano Ai. Access an extensive collection of prompts to generate stunning visual art, or upload your own images to upscale resolution and enhance details instantly.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <motion.button
