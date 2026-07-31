@@ -10,11 +10,11 @@ const faqs = [
     },
     {
         question: "Is my data secure?",
-        answer: "Yes, we use industry-standard encryption protocols (SSL/TLS) for all data transfers. We only temporarily process your uploaded images and prompts to perform AI enhancement or generation, and we do not store them longer than necessary.",
+        answer: "Yes, we use industry-standard encryption protocols (SSL/TLS) for all data transfers. We only process your movie searches, spoiler settings, and ratings to deliver tailored AI recommendations and summaries, and we protect your location and profile data securely.",
     },
     {
         question: "Do you offer a free trial?",
-        answer: "Absolutely! We offer a 3-day free trial that lets you explore the full potential of Nano Ai. You can try all our AI image generation and quality enhancement tools during this trial period before your subscription starts.",
+        answer: "Absolutely! We offer a 3-day free trial that lets you explore the full potential of Stream Flix. You can try all our advanced AI movie recommendation features and custom selective-spoiler summaries during this trial period before your subscription starts.",
     },
 ];
 

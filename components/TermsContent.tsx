@@ -16,7 +16,7 @@ export default function TermsContent() {
         </h1>
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 text-sm">
           <span className="text-gray-500 dark:text-gray-400">
-            Last Updated: May 13, 2026
+            Last Updated: July 31, 2026
           </span>
           <span className="hidden sm:inline text-gray-300">|</span>
           <a
@@ -35,7 +35,7 @@ export default function TermsContent() {
             title: "1. Acceptance of Agreement",
             content: (
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                By accessing or using Nano Ai (“Service”), you agree to be
+                By accessing or using Stream Flix (“Service”), you agree to be
                 legally bound by these Terms & Conditions. If you disagree with
                 any provision, you must immediately cease use of the Service.
               </p>
@@ -50,7 +50,7 @@ export default function TermsContent() {
                   <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">
                     “Platform”:
                   </span>
-                  <span>Refers to the Nano Ai website and applications.</span>
+                  <span>Refers to the Stream Flix website and applications.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">
@@ -62,10 +62,10 @@ export default function TermsContent() {
                 </li>
                 <li className="flex gap-3">
                   <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">
-                    “Generated Content”:
+                    “User Content”:
                   </span>
                   <span>
-                    Refers to any images, graphics, upscaled layouts, or prompt-based custom artwork created using the Service.
+                    Refers to any watchlists, custom reviews, ratings, search logs, or profile details saved using the Service.
                   </span>
                 </li>
               </ul>
@@ -77,24 +77,24 @@ export default function TermsContent() {
             content: (
               <>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                  Nano Ai provides AI-driven image generation and enhancement services, including prompt-based image creation, quality resolution upscaling, curated prompt libraries, image upload manipulation, and sharing capabilities.
+                  Stream Flix provides AI-driven movie discovery and analysis services, including movie information pages, cast & streaming availability info, AI-based movie recommendations, and custom summaries (with options for with or without spoilers based on your selection).
                 </p>
               </>
             ),
           },
           {
             id: "subscriptions",
-            title: "4. Subscriptions, Trials, and Tokens",
+            title: "4. Subscriptions & Free Trials",
             content: (
               <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
-                  Nano Ai offers a token-based subscription system (weekly and monthly auto-renewable plans). Tokens are used as currency to run image generation and quality upscaling processes.
+                  Stream Flix offers premium subscription plans (weekly and monthly auto-renewable plans) granting unlimited access to premium AI recommendations and custom movie summaries.
                 </p>
                 <p>
-                  New users are eligible for a **3-day free trial** of the subscription plan, allowing full access to explore the complete potential of Nano Ai before charging begins.
+                  New users are eligible for a **3-day free trial** of the subscription plan, allowing full access to explore the complete potential of Stream Flix before charging begins.
                 </p>
                 <p>
-                  You have the explicit right to cancel your subscription at any time. When canceled, your subscription tokens remain valid for usage until the end of the current billing cycle.
+                  You have the explicit right to cancel your subscription at any time. When canceled, your subscription remains active and premium features remain accessible until the end of the current billing cycle.
                 </p>
               </div>
             ),
@@ -109,11 +109,11 @@ export default function TermsContent() {
                 </p>
                 <div className="grid md:grid-cols-2 gap-3">
                   {[
-                    "Generate content that is illegal, defamatory, or harmful",
-                    "Use the Service to generate deepfakes of individuals without consent",
-                    "Create images that incite violence, hatred, or harassment",
-                    "Attempt to reverse engineer the AI models",
-                    "Infringe upon third-party intellectual property",
+                    "Attempt to scrape, harvest, or crawl movie database information from the Service",
+                    "Use AI recommendation queries to generate harmful, offensive, or harassing queries",
+                    "Circumvent spoiler filters or abuse the spoiler selection module",
+                    "Attempt to reverse engineer the recommendation models or software",
+                    "Infringe upon third-party intellectual property or copy original layouts",
                   ].map((item, i) => (
                     <div
                       key={i}
@@ -137,7 +137,7 @@ export default function TermsContent() {
             content: (
               <div className="space-y-4 text-gray-600 dark:text-gray-400">
                 <p className="leading-relaxed">
-                  Nano Ai owns the AI models, software, and brand. You retain ownership of the specific image content you generate, subject to these terms.
+                  Stream Flix owns the AI models, recommendation algorithms, database layout, software, and brand. You retain ownership of the custom watchlists and reviews you create, subject to these terms.
                 </p>
               </div>
             ),
@@ -148,12 +148,12 @@ export default function TermsContent() {
             content: (
               <>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  To the maximum extent permitted by law, Nano Ai shall not be
+                  To the maximum extent permitted by law, Stream Flix shall not be
                   liable for:
                 </p>
                 <ul className="space-y-2 text-gray-600 dark:text-gray-400 pl-4">
                   <li>• Indirect or consequential damages</li>
-                  <li>• Misuse of generated image content by the user</li>
+                  <li>• Inaccuracy of AI-generated summaries or recommendations</li>
                   <li>• Technical interruptions or data loss</li>
                 </ul>
               </>

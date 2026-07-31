@@ -4,38 +4,38 @@ import { motion } from "framer-motion";
 
 const features = [
   {
-    title: "Image Quality Enhancer",
-    description: "Upscale and optimize image quality using state-of-the-art AI. Restore details, remove noise, and bring low-resolution photos to life in high definition instantly.",
+    title: "Movie Information Explorer",
+    description: "Explore full details about any movie, including cast, crew, release dates, ratings, and where to stream them.",
+    icon: "movie",
+    details: ["Cast & Crew Details", "Ratings & Reviews", "Streaming Availability"],
+    gradient: "brand-gradient"
+  },
+  {
+    title: "AI-Based Recommendations",
+    description: "Get personalized movie recommendations driven by advanced AI models that learn your unique cinematic tastes.",
     icon: "auto_awesome",
-    details: ["AI Resolution Upscaling", "Detail Restoration", "Smart Noise Reduction"],
-    gradient: "brand-gradient"
-  },
-  {
-    title: "Prompt-to-Image Generation",
-    description: "Convert textual prompts into rich visual masterpieces. Generate a wide range of styles including anime, photorealistic, 3D, and conceptual art.",
-    icon: "palette",
-    details: ["Multi-Style Art Engine", "High-Fidelity Rendering", "Custom Aspect Ratios"],
+    details: ["Taste-Based Discovery", "Mood & Genre Matching", "Interactive AI Suggestions"],
     gradient: "identity-gradient"
   },
   {
-    title: "Curated Prompts Library",
-    description: "Access a large collection of professionally engineered prompts. Get inspired and optimize your generations with verified, high-performance templates.",
-    icon: "library_books",
-    details: ["Curated Style Collections", "Keyword Optimization", "Instant Prompt Copying"],
+    title: "Spoiler-Selective Summaries",
+    description: "Read concise summaries of movies. Choose between spoiler-free summaries to build anticipation, or full spoilers if you want to know everything.",
+    icon: "description",
+    details: ["Spoiler-Free Overview", "Full Plot Breakdown", "User-Controlled Spoilers"],
     gradient: "brand-gradient"
   },
   {
-    title: "Token-Based Subscriptions",
-    description: "Choose from flexible token-based subscription models tailored to your volume. Includes a 3-day free trial, allowing you to explore the app and cancel anytime.",
-    icon: "stars",
-    details: ["3-Day Free Trial", "Token Rollovers", "Cancel Anytime Guarantee"],
+    title: "Location-Based Discovery",
+    description: "Enable location permissions to discover regional viewing trends, localized streaming availability, and nearby cinema showtimes.",
+    icon: "location_on",
+    details: ["Local Cinema Showtimes", "Regional Streaming Availability", "Localized Movie Trends"],
     gradient: "identity-gradient"
   },
   {
-    title: "Secure Permissions",
-    description: "Privacy-first permissions designed to prioritize your data. Location permission enables local features, and Media Library permission enables profile and upload updates.",
-    icon: "shield",
-    details: ["Location-Based Features", "Profile & Upscale Uploads", "Secure Data Protocols"],
+    title: "Profile Customization",
+    description: "Personalize your account and profile page. Enable media library permission to securely upload and update your custom profile picture or avatar.",
+    icon: "photo_library",
+    details: ["Secure Profile Pictures", "Instant Avatar Upload", "Custom Visual Identity"],
     gradient: "brand-gradient"
   }
 ];
@@ -51,10 +51,10 @@ export default function Features() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-[#131118] dark:text-white mb-4">
-            Advanced AI Image Features
+            Advanced Movie Discovery Features
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Everything you need to generate, enhance, and manage state-of-the-art visual assets.
+            Everything you need to explore films, get AI recommendations, and manage your custom movie profile.
           </p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

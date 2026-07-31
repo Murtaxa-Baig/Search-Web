@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 @theme {
   --color-primary: #6366F1;
   --color-brand-purple: #9333EA;
@@ -7,7 +6,7 @@
   --color-background-light: #f6f5f8;
   --color-background-dark: #0F0C1D;
 
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer utilities {

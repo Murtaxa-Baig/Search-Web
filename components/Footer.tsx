@@ -9,10 +9,10 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Logo size={36} />
-              <span className="text-xl font-bold">Nano Ai</span>
+              <span className="text-xl font-bold">Stream Flix</span>
             </div>
             <p className="text-gray-400 text-sm max-w-xs">
-              The ultimate AI image generation and enhancement studio. Transform your prompts and photos with state-of-the-art visual models.
+              The ultimate AI movie discovery and recommendation platform. Find summaries, get personalized suggestions, and customize your experience.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-2 gap-12">

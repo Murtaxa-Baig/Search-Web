@@ -7,18 +7,18 @@ const sections = [
   { id: "introduction", label: "1. Introduction" },
   { id: "information-collect", label: "2. Information We Collect" },
   { id: "how-we-use", label: "3. How We Use Your Information" },
-  { id: "subscription-credits", label: "4. Subscription & Token Policy" },
+  { id: "subscription-credits", label: "4. Subscription & Premium Policy" },
   { id: "legal-basis", label: "5. Legal Basis for Processing" },
   { id: "third-party", label: "6. Third-Party Services" },
-  { id: "elevenlabs-disclaimer", label: "7. AI Providers Disclaimer" },
+  { id: "ai-disclaimer", label: "7. AI Providers Disclaimer" },
   { id: "data-retention", label: "8. Data Retention" },
   { id: "international-transfers", label: "9. International Transfers" },
   { id: "user-rights", label: "10. User Rights" },
   { id: "cookies-tech", label: "11. Cookies & Technical Info" },
   { id: "childrens-privacy", label: "12. Children's Privacy" },
   { id: "policy-updates", label: "13. Policy Updates" },
-  { id: "contact-info", label: "15. Contact Information" },
-  { id: "acceptance-policy", label: "16. Acceptance of Policy" },
+  { id: "contact-info", label: "14. Contact Information" },
+  { id: "acceptance-policy", label: "15. Acceptance of Policy" },
 ];
 
 export default function PrivacyContent() {
@@ -78,12 +78,12 @@ export default function PrivacyContent() {
           Privacy Policy
         </h1>
         <p className="text-[#6b608a] dark:text-[#a097bd] text-lg md:text-xl font-normal leading-relaxed max-w-3xl mb-8">
-          Nano Ai is dedicated to maintaining transparent information about how we collect, use, process, and protect your data while using our AI-powered image technologies.
+          Stream Flix is dedicated to maintaining transparent information about how we collect, use, process, and protect your data while using our AI-powered movie discovery and summary services.
         </p>
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm">
           <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
             <span className="material-symbols-outlined text-base">calendar_today</span>
-            <span>Last Updated: <span className="font-semibold text-gray-800 dark:text-gray-200">June 2, 2026</span></span>
+            <span>Last Updated: <span className="font-semibold text-gray-800 dark:text-gray-200">July 31, 2026</span></span>
           </div>
           <span className="hidden sm:inline text-gray-300 dark:text-gray-700">|</span>
           <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
@@ -160,10 +160,10 @@ export default function PrivacyContent() {
             </div>
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                This Privacy Policy explains how **Nano Ai** collects, uses, stores, and protects user information when using our mobile application, website, and AI image services.
+                This Privacy Policy explains how **Stream Flix** collects, uses, stores, and protects user information when using our mobile application, website, and AI-powered movie recommendation and summary services.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                By using Nano Ai, you agree to the practices described in this Privacy Policy.
+                By using Stream Flix, you agree to the practices described in this Privacy Policy.
               </p>
             </div>
           </motion.section>
@@ -214,19 +214,19 @@ export default function PrivacyContent() {
                 <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-purple"></span>
-                    <span>Image generation and enhancement activity</span>
+                    <span>Movie search history and viewed titles</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-purple"></span>
-                    <span>Tokens usage</span>
+                    <span>Spoiler settings and summary preference selections</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-purple"></span>
-                    <span>Subscription information</span>
+                    <span>AI recommendation history and feedback ratings</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-purple"></span>
-                    <span>Device type and operating system</span>
+                    <span>Device type and operating system version</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-purple"></span>
@@ -235,56 +235,56 @@ export default function PrivacyContent() {
                 </ul>
               </div>
 
-              {/* Image & Content Data */}
+              {/* Movie & Preferences Data */}
               <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
                 <div className="flex items-center gap-3 text-brand-blue">
-                  <span className="material-symbols-outlined p-2 rounded-xl bg-brand-blue/10">image</span>
-                  <h3 className="font-bold text-lg text-[#131118] dark:text-white">Image & Content Data</h3>
+                  <span className="material-symbols-outlined p-2 rounded-xl bg-brand-blue/10">movie</span>
+                  <h3 className="font-bold text-lg text-[#131118] dark:text-white">Movie & Preferences Data</h3>
                 </div>
-                <p className="text-xs text-gray-500">Depending on the feature used, we may temporarily process:</p>
+                <p className="text-xs text-gray-500">Depending on features used, we may temporarily process:</p>
                 <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>
-                    <span>Text prompts entered for AI image generation</span>
+                    <span>Movie names or keywords entered for summaries</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>
-                    <span>Uploaded source images for quality enhancement or generation</span>
+                    <span>Spoiler preference state (with or without spoilers)</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>
-                    <span>AI-generated image outputs</span>
+                    <span>AI-generated custom recommendations and summaries</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>
-                    <span>Saved prompt templates & collections</span>
+                    <span>Saved custom movie lists, watchlists, and favorite genres</span>
                   </li>
                 </ul>
               </div>
 
-              {/* Media, Location & Device Permissions */}
+              {/* Permissions & Device Data */}
               <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
                 <div className="flex items-center gap-3 text-green-500">
                   <span className="material-symbols-outlined p-2 rounded-xl bg-green-500/10">photo_library</span>
-                  <h3 className="font-bold text-lg text-[#131118] dark:text-white">Media & Device Permissions</h3>
+                  <h3 className="font-bold text-lg text-[#131118] dark:text-white">Permissions & Device Data</h3>
                 </div>
-                <p className="text-xs text-gray-500">With your permission, Nano Ai may access:</p>
+                <p className="text-xs text-gray-500">With your explicit permission, Stream Flix may access:</p>
                 <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-2">
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
-                    <span>Photos, gallery, and media library files</span>
+                    <span>Media Library & Gallery files (profile picture update only)</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
-                    <span>Location data (approximate and precise)</span>
+                    <span>Location Data (approximate and precise)</span>
                   </li>
                 </ul>
                 <div className="p-3 bg-green-500/5 rounded-xl border border-green-500/10 text-xs text-green-600 dark:text-green-400 leading-relaxed space-y-2">
                   <p>
-                    <strong>Media Library Access:</strong> Used solely for updating user profile pictures and uploading image sources for quality enhancement or prompt-based generation.
+                    <strong>Media Library Access:</strong> Used solely for updating user profile pictures. We do not inspect other photos or upload unauthorized content.
                   </p>
                   <p>
-                    <strong>Location Access:</strong> Required to enable location-based features, customized regional visual trends, and stylized generation presets. We protect your data and never sell or publicly share your location or images.
+                    <strong>Location Access:</strong> Required to enable location-based features, localized streaming platform availability, regional cinema listings, and regional popularity trends. We protect your coordinates and never share your locations.
                   </p>
                 </div>
               </div>
@@ -307,18 +307,18 @@ export default function PrivacyContent() {
 
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm">
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-                We processes and utilizes the information we collect for the following key purposes:
+                We process and utilize the information we collect for the following key purposes:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
-                  { text: "Create and manage user accounts", icon: "manage_accounts" },
-                  { text: "Process AI image generations", icon: "image" },
-                  { text: "Provide AI Image Quality Enhancer features", icon: "auto_awesome" },
-                  { text: "Deliver localized, location-based trends & presets", icon: "location_on" },
-                  { text: "Manage subscriptions and billing", icon: "credit_card" },
-                  { text: "Track token usage", icon: "toll" },
-                  { text: "Improve app performance and reliability", icon: "speed" },
+                  { text: "Create and manage user accounts & profiles", icon: "manage_accounts" },
+                  { text: "Provide detailed movie information & ratings", icon: "movie" },
+                  { text: "Generate AI-based movie recommendations", icon: "auto_awesome" },
+                  { text: "Deliver custom spoiler-controlled summaries", icon: "description" },
+                  { text: "Provide location-based listings & local streaming info", icon: "location_on" },
+                  { text: "Manage subscriptions and premium feature access", icon: "credit_card" },
+                  { text: "Track search and taste history to refine suggestions", icon: "history" },
                   { text: "Prevent fraud, abuse, or unauthorized access", icon: "shield_lock" },
                   { text: "Provide customer support and technical assistance", icon: "contact_support" },
                 ].map((item, idx) => (
@@ -331,7 +331,7 @@ export default function PrivacyContent() {
             </div>
           </motion.section>
 
-          {/* Section 4: Subscription & Credits Policy */}
+          {/* Section 4: Subscription & Premium Policy */}
           <motion.section
             id="subscription-credits"
             initial={{ opacity: 0, y: 15 }}
@@ -341,11 +341,10 @@ export default function PrivacyContent() {
           >
             <div className="flex items-center gap-3">
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">4</span>
-              <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Subscription & Token Policy</h2>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Subscription & Premium Policy</h2>
             </div>
 
             <div className="space-y-6">
-              {/* Grid 1: Tokens & Subscription Plans */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                 {/* Free Trial */}
@@ -356,11 +355,11 @@ export default function PrivacyContent() {
                     <h3 className="font-bold text-lg text-[#131118] dark:text-white">3-Day Free Trial</h3>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                    Nano Ai provides:
+                    Stream Flix provides:
                   </p>
                   <div className="p-4 rounded-xl bg-primary/5 border border-primary/10 text-center">
                     <div className="text-3xl font-black text-primary">3-Day Free Trial</div>
-                    <div className="text-xs text-[#6b608a] dark:text-[#a097bd] mt-1">Explore Full Potential (Complimentary Tokens)</div>
+                    <div className="text-xs text-[#6b608a] dark:text-[#a097bd] mt-1">Explore Unlimited Movie Discoveries</div>
                   </div>
                 </div>
 
@@ -372,7 +371,7 @@ export default function PrivacyContent() {
                     <h3 className="font-bold text-lg text-[#131118] dark:text-white">Subscription Plans</h3>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                    We offer auto-renewable token plans:
+                    We offer auto-renewable plans:
                   </p>
                   <div className="grid grid-cols-2 gap-3">
                     <div className="p-3 bg-brand-purple/5 border border-brand-purple/10 rounded-xl text-center">
@@ -398,16 +397,16 @@ export default function PrivacyContent() {
 
                 <div className="space-y-4">
                   <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-2">
-                    <h4 className="font-bold text-sm text-[#131118] dark:text-white">Token-Based AI Usage</h4>
+                    <h4 className="font-bold text-sm text-[#131118] dark:text-white">AI-Powered Premium Features</h4>
                     <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                      AI Image Generation and Quality Enhancement features consume tokens. Subscriptions grant users a recurring token balance. Additional tokens can be acquired directly within the application to expand limits.
+                      AI movie recommendations and selective-spoiler summaries are advanced features. Subscriptions grant users unlimited requests to these AI movie models. Account access levels can be updated directly within the application.
                     </p>
                   </div>
 
                   <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-2">
                     <h4 className="font-bold text-sm text-[#131118] dark:text-white">Subscription Cancellation</h4>
                     <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                      Users can cancel their subscription at any time. When canceled, subscription tokens remain valid for usage until the end of the current billing cycle, after which further recurring token grants cease.
+                      Users can cancel their subscription at any time. When canceled, premium access benefits remain valid until the end of the current billing cycle, after which automatic renewal and features cease.
                     </p>
                   </div>
                 </div>
@@ -470,9 +469,9 @@ export default function PrivacyContent() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {[
-                  { label: "User Consent", desc: "Given when enabling device permissions or submitting details.", icon: "done_all" },
-                  { label: "Contractual Necessity", desc: "Required to deliver image generation services.", icon: "handshake" },
-                  { label: "Legitimate Interests", desc: "Improving platform security, performance & reliability.", icon: "troubleshoot" },
+                  { label: "User Consent", desc: "Given when enabling device permissions or submitting search requests.", icon: "done_all" },
+                  { label: "Contractual Necessity", desc: "Required to deliver movie recommendations & summaries.", icon: "handshake" },
+                  { label: "Legitimate Interests", desc: "Improving platform security, performance & recommendations.", icon: "troubleshoot" },
                   { label: "Legal Compliance", desc: "Meeting legal records, audits, or regulatory demands.", icon: "gavel" }
                 ].map((basis, idx) => (
                   <div key={idx} className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-2">
@@ -506,14 +505,14 @@ export default function PrivacyContent() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                  {/* AI Image Engines */}
+                  {/* AI Recommendation Engines */}
                   <div className="p-5 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-2">
                     <div className="flex items-center justify-between">
-                      <h4 className="font-bold text-base text-[#131118] dark:text-white">AI Image Engines</h4>
+                      <h4 className="font-bold text-base text-[#131118] dark:text-white">AI Recommendation Engines</h4>
                       <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-blue-500/10 text-blue-500">AI Processing</span>
                     </div>
                     <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                      Used for state-of-the-art AI image generation and enhancement. Any data processed through our AI providers (such as Stability AI, OpenAI) is governed by their own privacy policies and terms.
+                      Used for movie search analysis, recommendations, and custom summaries. Any data processed through our AI providers (such as OpenAI) is governed by their own privacy policies.
                     </p>
                   </div>
 
@@ -524,7 +523,7 @@ export default function PrivacyContent() {
                       <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-orange-500/10 text-orange-500">Backend / Analytics</span>
                     </div>
                     <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                      Used for user authentication, usage analytics, secure cloud databases, real-time crash reporting, and reliable server infrastructure.
+                      Used for user authentication, preference tracking, cloud databases, crash reporting, and server infrastructure.
                     </p>
                   </div>
 
@@ -535,7 +534,7 @@ export default function PrivacyContent() {
                       <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-green-500/10 text-green-500">Sub Billing</span>
                     </div>
                     <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                      Handles subscription lifecycle management, secure purchase verification, and robust mobile payment billing services.
+                      Handles premium subscription lifecycle management, purchase verification, and app store transactions.
                     </p>
                   </div>
 
@@ -543,10 +542,10 @@ export default function PrivacyContent() {
                   <div className="p-5 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-2">
                     <div className="flex items-center justify-between">
                       <h4 className="font-bold text-base text-[#131118] dark:text-white">Cloud Infrastructure</h4>
-                      <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-purple-500/10 text-purple-500">Secure Hosting</span>
+                      <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-purple-500/10 text-purple-500">Hosting</span>
                     </div>
                     <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                      Top-tier cloud service providers are utilized to manage secure data hosting, object data storage, and global performance optimization.
+                      Top-tier cloud service providers are utilized to manage secure data hosting, object data storage, and global content delivery.
                     </p>
                   </div>
 
@@ -557,7 +556,7 @@ export default function PrivacyContent() {
 
           {/* Section 7: Disclaimer Regarding Third-Party AI Providers */}
           <motion.section
-            id="elevenlabs-disclaimer"
+            id="ai-disclaimer"
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -578,53 +577,53 @@ export default function PrivacyContent() {
               </div>
               <div className="space-y-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
-                  Nano Ai is built using advanced AI technologies powered in part by third-party AI image generators and enhancement engines (such as OpenAI and Stability AI).
+                  Stream Flix is built using advanced AI technologies powered in part by third-party AI service models (such as OpenAI).
                 </p>
                 <p className="font-semibold text-gray-800 dark:text-gray-200">
                   We are not affiliated with, endorsed by, or officially associated with these third-party AI service providers.
                 </p>
                 <p>
-                  All trademarks, service marks, product names, and company names belong to their respective owners. Any information processed through third-party services is strictly subject to their own privacy practices and policies.
+                  All trademarks, service marks, product names, and company names belong to their respective owners. Any queries processed through third-party services are strictly subject to their own privacy practices and policies.
                 </p>
               </div>
             </div>
 
-            {/* AI Image Processing Details Card */}
+            {/* AI Recommendation & Summary Details Card */}
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-6">
               <div className="flex items-center gap-3 text-primary">
-                <span className="material-symbols-outlined p-2 rounded-xl bg-primary/10">image</span>
-                <h3 className="font-bold text-lg text-[#131118] dark:text-white">AI Image Processing Details</h3>
+                <span className="material-symbols-outlined p-2 rounded-xl bg-primary/10">auto_awesome</span>
+                <h3 className="font-bold text-lg text-[#131118] dark:text-white">AI Movie Processing Details</h3>
               </div>
               <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                To provide our AI image generation and enhancement features, we process text prompts and uploaded source images in partnership with third-party providers under strict privacy guidelines:
+                To provide our AI movie recommendations and customizable summaries, we process search keywords, movie titles, and preferences in partnership with third-party providers under strict privacy guidelines:
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
                 <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-1">
                   <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Data Sent</span>
                   <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
-                    Uploaded source images, text prompts, and generation configuration parameters.
+                    Search keywords, movie names, preferred genres, and spoiler setting selections.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-1">
                   <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Purpose</span>
                   <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
-                    To generate visual art, upscale resolutions, enhance photo clarity, and deliver visual outputs.
+                    To generate personalized recommendations, character breakdowns, and custom summaries.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-1">
                   <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Shared With</span>
                   <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
-                    Third-party AI image processing providers (solely to process and generate results).
+                    Third-party AI service providers (solely to process and return recommendation suggestions).
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 space-y-1">
                   <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">User Consent</span>
                   <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
-                    Data is shared only when you actively trigger visual generation or enhancement features.
+                    Data is processed only when you actively request recommendations or movie summaries.
                   </p>
                 </div>
 
@@ -659,7 +658,7 @@ export default function PrivacyContent() {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
                 {[
-                  "Provide services & experience",
+                  "Provide recommendations & reviews",
                   "Maintain active subscriptions",
                   "Comply with legal obligations",
                   "Resolve unexpected disputes",
@@ -672,7 +671,7 @@ export default function PrivacyContent() {
                 ))}
               </div>
               <div className="p-4 bg-primary/5 rounded-xl border border-primary/10 text-xs text-primary leading-relaxed">
-                <strong>Image generation cleanup:</strong> Temporary uploaded source images or generated visual outputs are automatically deleted from intermediate processing servers immediately after completion. Users maintain the absolute right to request full account deletion at any time.
+                <strong>Movie search cleanup:</strong> General queries and temporary session choices are deleted from intermediate servers after completion. Saved watchlists and profiles are stored securely in databases and deleted immediately upon request.
               </div>
             </div>
           </motion.section>
@@ -722,8 +721,8 @@ export default function PrivacyContent() {
                 {[
                   { title: "Access to Personal Data", desc: "Request details and copy of the personal information stored in our secure database.", icon: "database" },
                   { title: "Correction of Information", desc: "Request updates to correct or complete any outdated/inaccurate data records.", icon: "edit_note" },
-                  { title: "Deletion of Account Data", desc: "Request permanent removal of your account, media library, and personal metadata.", icon: "delete_forever" },
-                  { title: "Withdrawal of Consent", desc: "Revoke permissions previously granted (e.g. mic, library, notification permissions).", icon: "cancel" },
+                  { title: "Deletion of Account Data", desc: "Request permanent removal of your account, watchlists, location logs, and profile info.", icon: "delete_forever" },
+                  { title: "Withdrawal of Consent", desc: "Revoke permissions previously granted (e.g. location or media library permissions).", icon: "cancel" },
                   { title: "Account Termination", desc: "Voluntarily terminate account usage and services at any time.", icon: "no_accounts" },
                 ].map((right, idx) => (
                   <div key={idx} className="flex items-start gap-4 p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 transition-transform hover:-translate-y-0.5">
@@ -758,7 +757,7 @@ export default function PrivacyContent() {
 
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Nano Ai may implement standard technical tracking and performance technologies:
+                Stream Flix may implement standard technical tracking and performance technologies:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -803,7 +802,7 @@ export default function PrivacyContent() {
                 <span className="font-bold text-sm">Age Safeguard Warning</span>
               </div>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
-                Nano Ai is not intended for children under the age of **13**. We do not knowingly collect or request personal information from children.
+                Stream Flix is not intended for children under the age of **13**. We do not knowingly collect or request personal information from children.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
                 If we become aware that we have inadvertently collected information from a child under 13, we will take immediate steps to delete all such data promptly from our secure databases.
@@ -833,13 +832,13 @@ export default function PrivacyContent() {
                   • Changes become effective **immediately** upon publication within the application or website.
                 </p>
                 <p>
-                  • Continued use of Nano Ai after updates are posted constitutes your explicit acceptance of the revised Privacy Policy.
+                  • Continued use of Stream Flix after updates are posted constitutes your explicit acceptance of the revised Privacy Policy.
                 </p>
               </div>
             </div>
           </motion.section>
 
-          {/* Section 15: Contact Information */}
+          {/* Section 14: Contact Information */}
           <motion.section
             id="contact-info"
             initial={{ opacity: 0, y: 15 }}
@@ -848,7 +847,7 @@ export default function PrivacyContent() {
             className="space-y-4"
           >
             <div className="flex items-center gap-3">
-              <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">15</span>
+              <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">14</span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Contact Information</h2>
             </div>
 
@@ -878,7 +877,7 @@ export default function PrivacyContent() {
             </div>
           </motion.section>
 
-          {/* Section 16: Acceptance of Policy */}
+          {/* Section 15: Acceptance of Policy */}
           <motion.section
             id="acceptance-policy"
             initial={{ opacity: 0, y: 15 }}
@@ -887,7 +886,7 @@ export default function PrivacyContent() {
             className="space-y-4"
           >
             <div className="flex items-center gap-3">
-              <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">16</span>
+              <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary font-bold text-sm">15</span>
               <h2 className="text-2xl md:text-3xl font-extrabold text-[#131118] dark:text-white">Acceptance of Policy</h2>
             </div>
 
@@ -897,7 +896,7 @@ export default function PrivacyContent() {
                 <div className="space-y-2">
                   <h4 className="font-extrabold text-[#131118] dark:text-white text-base">Acknowledgment & Agreement</h4>
                   <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
-                    By using **Nano Ai**, you acknowledge that you have read, understood, and agreed to be bound by all guidelines, procedures, and practices detailed in this Privacy Policy.
+                    By using **Stream Flix**, you acknowledge that you have read, understood, and agreed to be bound by all guidelines, procedures, and practices detailed in this Privacy Policy.
                   </p>
                 </div>
               </div>
