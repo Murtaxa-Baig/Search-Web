@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Stream Flix | AI Movie Recommendations & Summaries",
+  title: "Streaming Browser | AI Movie Recommendations & Summaries",
   description: "Get personalized AI-based movie recommendations, explore movie details, and read custom summaries with or without spoilers based on your preferences.",
 };
 

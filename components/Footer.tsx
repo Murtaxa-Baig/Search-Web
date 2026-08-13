@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Logo size={36} />
-              <span className="text-xl font-bold">Stream Flix</span>
+              <span className="text-xl font-bold">Streaming Browser</span>
             </div>
             <p className="text-gray-400 text-sm max-w-xs">
               The ultimate AI movie discovery and recommendation platform. Find summaries, get personalized suggestions, and customize your experience.

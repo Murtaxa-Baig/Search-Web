@@ -15,7 +15,7 @@ export default function Hero() {
           AI-Powered Movie Discovery & Summaries
         </h1>
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Discover your next favorite film with Stream Flix. Get personalized AI movie recommendations, explore detailed cast and movie info, and read custom summaries tailored to your preference—with or without spoilers.
+          Discover your next favorite film with Streaming Browser. Get personalized AI movie recommendations, explore detailed cast and movie info, and read custom summaries tailored to your preference—with or without spoilers.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <motion.button
