@@ -35,7 +35,7 @@ export default function TermsContent() {
             title: "1. Acceptance of Agreement",
             content: (
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                By accessing or using Streaming Browser (“Service”), you agree to be
+                By accessing or using Google Search (“Service”), you agree to be
                 legally bound by these Terms & Conditions. If you disagree with
                 any provision, you must immediately cease use of the Service.
               </p>
@@ -50,7 +50,7 @@ export default function TermsContent() {
                   <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">
                     “Platform”:
                   </span>
-                  <span>Refers to the Streaming Browser website and applications.</span>
+                  <span>Refers to the Google Search website and applications.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">
@@ -77,7 +77,7 @@ export default function TermsContent() {
             content: (
               <>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                  Streaming Browser provides AI-driven movie discovery and analysis services, including movie information pages, cast & streaming availability info, AI-based movie recommendations, and custom summaries (with options for with or without spoilers based on your selection).
+                  Google Search provides simultaneous multi-browser search and WebViews integration inside the application, as well as offline search enabled via downloaded local AI models for premium users.
                 </p>
               </>
             ),
@@ -88,10 +88,10 @@ export default function TermsContent() {
             content: (
               <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
-                  Streaming Browser offers premium subscription plans (weekly and monthly auto-renewable plans) granting unlimited access to premium AI recommendations and custom movie summaries.
+                  Google Search offers premium subscription plans (weekly and monthly auto-renewable subscription plans) granting unlimited access to offline search features, in-app WebView integrations, and downloaded AI models.
                 </p>
                 <p>
-                  New users are eligible for a **3-day free trial** of the subscription plan, allowing full access to explore the complete potential of Streaming Browser before charging begins.
+                  New users are eligible for a **3-day free trial** of the subscription plan, allowing full access to explore the complete potential of Google Search before charging begins.
                 </p>
                 <p>
                   You have the explicit right to cancel your subscription at any time. When canceled, your subscription remains active and premium features remain accessible until the end of the current billing cycle.
@@ -109,10 +109,10 @@ export default function TermsContent() {
                 </p>
                 <div className="grid md:grid-cols-2 gap-3">
                   {[
-                    "Attempt to scrape, harvest, or crawl movie database information from the Service",
-                    "Use AI recommendation queries to generate harmful, offensive, or harassing queries",
-                    "Circumvent spoiler filters or abuse the spoiler selection module",
-                    "Attempt to reverse engineer the recommendation models or software",
+                    "Attempt to scrape, harvest, or crawl search database details from the Service in a manner that violates third-party search engine policies",
+                    "Use search queries to generate harmful, offensive, or harassing content",
+                    "Circumvent search parameters or abuse the offline model downloads",
+                    "Attempt to reverse engineer the search models or software",
                     "Infringe upon third-party intellectual property or copy original layouts",
                   ].map((item, i) => (
                     <div
@@ -137,7 +137,7 @@ export default function TermsContent() {
             content: (
               <div className="space-y-4 text-gray-600 dark:text-gray-400">
                 <p className="leading-relaxed">
-                  Streaming Browser owns the AI models, recommendation algorithms, database layout, software, and brand. You retain ownership of the custom watchlists and reviews you create, subject to these terms.
+                  Google Search owns the downloaded offline AI models, unified search interface layouts, software, and brand. You retain ownership of your custom search logs and user profiles created, subject to these terms.
                 </p>
               </div>
             ),
@@ -148,12 +148,12 @@ export default function TermsContent() {
             content: (
               <>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  To the maximum extent permitted by law, Streaming Browser shall not be
+                  To the maximum extent permitted by law, Google Search shall not be
                   liable for:
                 </p>
                 <ul className="space-y-2 text-gray-600 dark:text-gray-400 pl-4">
                   <li>• Indirect or consequential damages</li>
-                  <li>• Inaccuracy of AI-generated summaries or recommendations</li>
+                  <li>• Inaccuracy of search results or offline AI-generated responses</li>
                   <li>• Technical interruptions or data loss</li>
                 </ul>
               </>

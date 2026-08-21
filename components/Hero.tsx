@@ -12,10 +12,10 @@ export default function Hero() {
         className="w-full max-w-4xl"
       >
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#131118] dark:text-white leading-[1.1] mb-8 tracking-tight mx-auto">
-          AI-Powered Movie Discovery & Summaries
+          Simultaneous Multi-Browser Search
         </h1>
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Discover your next favorite film with Streaming Browser. Get personalized AI movie recommendations, explore detailed cast and movie info, and read custom summaries tailored to your preference—with or without spoilers.
+          Search across multiple browsers simultaneously in one go with Google Search. Open active WebViews for all selected browsers directly inside the application, download offline AI search models, and enjoy secure customized search preferences.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <motion.button

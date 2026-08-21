@@ -10,11 +10,11 @@ const faqs = [
     },
     {
         question: "Is my data secure?",
-        answer: "Yes, we use industry-standard encryption protocols (SSL/TLS) for all data transfers. We only process your movie searches, spoiler settings, and ratings to deliver tailored AI recommendations and summaries, and we protect your location and profile data securely.",
+        answer: "Yes, we use industry-standard encryption protocols (SSL/TLS) for all data transfers. We only process your search queries, selected browser preferences, and model downloads to deliver tailored in-app browser views and offline responses, and we protect your location and profile picture data securely.",
     },
     {
         question: "Do you offer a free trial?",
-        answer: "Absolutely! We offer a 3-day free trial that lets you explore the full potential of Streaming Browser. You can try all our advanced AI movie recommendation features and custom selective-spoiler summaries during this trial period before your subscription starts.",
+        answer: "Absolutely! We offer a 3-day free trial that lets you explore the full potential of Google Search. You can try all our advanced features, including simultaneous browser searches and WebView integrations, during this trial period before your subscription starts.",
     },
 ];
 

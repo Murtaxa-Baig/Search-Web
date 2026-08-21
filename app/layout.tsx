@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Streaming Browser | AI Movie Recommendations & Summaries",
-  description: "Get personalized AI-based movie recommendations, explore movie details, and read custom summaries with or without spoilers based on your preferences.",
+  title: "Google Search | Simultaneous Multi-Browser Search & Offline AI Search",
+  description: "Search across multiple browsers simultaneously in one go. Run WebViews inside the application, download offline AI models, and customize your search experience.",
 };
 
 export default function RootLayout({
