@@ -5,11 +5,8 @@ import Image from "next/image";
 
 export default function Features() {
   return (
-    <section id="features" className="py-24 relative overflow-hidden bg-slate-950 text-white">
-      {/* Ambient Lighting */}
-      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-10 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-[120px] pointer-events-none" />
-
+    <section id="features" className="py-24 relative overflow-hidden bg-black text-white border-b border-zinc-800">
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
@@ -19,200 +16,216 @@ export default function Features() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-xs font-mono font-extrabold uppercase tracking-widest text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">
-            Aurora Obsidian Bento Grid
-          </span>
-          <h2 className="text-3xl sm:text-5xl font-black text-white mt-4 mb-4 tracking-tight">
-            Engineered for Unmatched Search Speed & Intelligence
+          <div className="mono-tag mb-4">
+            Technical Architecture
+          </div>
+          <h2 className="text-3xl sm:text-5xl font-black text-white mt-4 mb-4 tracking-tight uppercase">
+            Engineered for Pure Performance & Privacy
           </h2>
-          <p className="text-slate-300 max-w-2xl mx-auto text-base sm:text-lg">
-            Discover how Google Search transforms multi-engine browsing, offline AI query processing, and privacy controls into a single app.
+          <p className="text-zinc-400 max-w-2xl mx-auto text-sm sm:text-base font-mono">
+            Full control over multi-engine web querying, offline AI models, and user privacy rights.
           </p>
         </motion.div>
 
-        {/* Bento Box Grid */}
-        <div className="bento-grid">
+        {/* Reversed Bento Box Grid (Reversed layout order: Privacy & Local AI first, Multi-engine bottom) */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
 
-          {/* Card 1: Multi-Engine Query (Span 2) */}
+          {/* Row 1: Privacy & Account Ownership (Span 7) */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             whileHover={{ y: -4 }}
-            className="bento-card bento-span-2 flex flex-col justify-between group"
+            className="md:col-span-7 mono-card p-8 border border-zinc-800 flex flex-col justify-between group"
           >
-            <div className="flex items-center justify-between mb-6">
-              <div className="w-12 h-12 rounded-xl brand-gradient flex items-center justify-center shadow-lg shadow-cyan-500/20">
-                <span className="material-symbols-outlined text-2xl text-white">travel_explore</span>
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-white">shield_lock</span>
+                <span className="text-xs font-mono font-bold text-white uppercase tracking-widest">Privacy & Data Rights</span>
               </div>
-              <span className="text-xs font-mono font-bold text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/30">
-                5x Engine Sync
-              </span>
-            </div>
-
-            <div className="mb-6">
-              <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
-                Simultaneous Multi-Engine Search
+              <h3 className="text-2xl font-bold text-white uppercase group-hover:text-zinc-300 transition-colors">
+                Your Search Data, 100% Owned By You
               </h3>
-              <p className="text-sm text-slate-300 leading-relaxed">
-                Dispatch your query across Google, Brave, Bing, and DuckDuckGo in parallel. Compare results side-by-side without opening multiple external browser tabs.
+              <p className="text-xs font-mono text-zinc-400 leading-relaxed">
+                Full compliance with data privacy laws. Instant self-service account deletion, automated email confirmation link dispatch, and zero third-party tracking.
               </p>
             </div>
 
-            {/* Visual Engine Pill Bar */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-slate-800">
-              <div className="p-3 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
-                <span className="material-symbols-outlined text-blue-400 block mb-1">search</span>
-                <span className="text-xs font-bold text-slate-200">Google</span>
-              </div>
-              <div className="p-3 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
-                <span className="material-symbols-outlined text-orange-400 block mb-1">security</span>
-                <span className="text-xs font-bold text-slate-200">Brave</span>
-              </div>
-              <div className="p-3 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
-                <span className="material-symbols-outlined text-emerald-400 block mb-1">privacy_tip</span>
-                <span className="text-xs font-bold text-slate-200">DuckDuckGo</span>
-              </div>
-              <div className="p-3 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
-                <span className="material-symbols-outlined text-sky-400 block mb-1">travel_explore</span>
-                <span className="text-xs font-bold text-slate-200">Bing</span>
-              </div>
+            <div className="flex flex-col sm:flex-row items-center gap-3 pt-6 mt-6 border-t border-zinc-800">
+              <a
+                href="/delete-account"
+                className="w-full sm:w-auto px-5 py-2.5 bg-zinc-900 border border-zinc-700 text-white hover:bg-white hover:text-black font-mono text-xs font-bold transition-colors text-center cursor-pointer"
+              >
+                Request Account Deletion
+              </a>
+              <a
+                href="/privacy"
+                className="w-full sm:w-auto px-5 py-2.5 bg-transparent border border-zinc-800 text-zinc-400 hover:text-white font-mono text-xs font-bold transition-colors text-center"
+              >
+                View Privacy Policy
+              </a>
             </div>
           </motion.div>
 
-          {/* Card 2: Offline Local AI (With Graphic) */}
+          {/* Row 1: Downloaded Local AI (Span 5 - with grayscale neural image) */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
             whileHover={{ y: -4 }}
-            className="bento-card flex flex-col justify-between group"
+            className="md:col-span-5 mono-card p-6 border border-zinc-800 flex flex-col justify-between group"
           >
-            <div className="relative h-44 w-full rounded-xl overflow-hidden mb-6 border border-slate-800">
+            <div className="relative h-40 w-full overflow-hidden mb-6 border border-zinc-800 bg-zinc-900">
               <Image
                 src="/images/ai_engine.jpg"
-                alt="Offline AI Neural Chip Illustration"
+                alt="Offline AI Neural Chip"
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                className="object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent" />
-              <div className="absolute top-3 left-3 bg-purple-500/20 backdrop-blur-md px-2.5 py-1 rounded-md border border-purple-500/40 text-[11px] font-mono text-purple-300 font-bold">
+              <div className="absolute top-3 left-3 bg-black px-2.5 py-1 border border-zinc-700 text-[10px] font-mono text-white font-bold uppercase">
                 100% Offline AI
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
-                Downloaded Local AI Engine
+              <h3 className="text-xl font-bold text-white uppercase mb-2 group-hover:text-zinc-300 transition-colors">
+                Local Offline AI Engine
               </h3>
-              <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                Run lightweight neural models on your mobile hardware. Search parameters and receive intelligent answers without internet or cell connectivity.
+              <p className="text-xs font-mono text-zinc-400 leading-relaxed mb-4">
+                Execute offline neural search on your phone. Query parameters without sending cellular data externally.
               </p>
-              <div className="flex items-center gap-2 text-xs font-mono text-purple-400">
-                <span className="material-symbols-outlined text-sm">memory</span>
-                <span>Zero Data Usage</span>
+              <div className="flex items-center gap-2 text-xs font-mono text-zinc-400 border-t border-zinc-800 pt-3">
+                <span className="material-symbols-outlined text-sm text-white">memory</span>
+                <span>Zero Cellular Data Required</span>
               </div>
             </div>
           </motion.div>
 
-          {/* Card 3: In-App WebViews */}
+          {/* Row 2: In-App Active WebViews (Span 4) */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
             whileHover={{ y: -4 }}
-            className="bento-card flex flex-col justify-between group"
+            className="md:col-span-4 mono-card p-6 border border-zinc-800 flex flex-col justify-between group"
           >
             <div>
-              <div className="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-6 border border-blue-500/20">
-                <span className="material-symbols-outlined text-2xl">web_asset</span>
+              <div className="w-10 h-10 bg-zinc-900 border border-zinc-700 text-white flex items-center justify-center mb-6">
+                <span className="material-symbols-outlined text-xl">web_asset</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-                In-App Active WebViews
+              <h3 className="text-lg font-bold text-white uppercase mb-2 group-hover:text-zinc-300 transition-colors">
+                In-App WebViews Persistence
               </h3>
-              <p className="text-xs text-slate-300 leading-relaxed mb-6">
-                Never lose your browsing session. Live WebView windows persist in memory so you can flip back and forth between search engines instantly.
+              <p className="text-xs font-mono text-zinc-400 leading-relaxed mb-6">
+                Active search engine web tabs stay preserved in memory. Switch between Google and Brave seamlessly.
               </p>
             </div>
 
-            <div className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
-              <div className="flex items-center justify-between text-xs text-slate-300">
-                <span className="font-mono">Tab Persistence</span>
-                <span className="text-emerald-400 font-bold">Active</span>
-              </div>
-              <div className="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
-                <div className="h-full bg-blue-500 rounded-full w-full animate-pulse" />
+            <div className="p-3 bg-zinc-950 border border-zinc-800 space-y-2">
+              <div className="flex items-center justify-between text-xs font-mono text-zinc-400">
+                <span>Memory Cache</span>
+                <span className="text-white font-bold">Preserved</span>
               </div>
             </div>
           </motion.div>
 
-          {/* Card 4: Smart Geo-Location */}
+          {/* Row 2: Location-Based Trends (Span 4) */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
             whileHover={{ y: -4 }}
-            className="bento-card flex flex-col justify-between group"
+            className="md:col-span-4 mono-card p-6 border border-zinc-800 flex flex-col justify-between group"
           >
             <div>
-              <div className="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-6 border border-emerald-500/20">
-                <span className="material-symbols-outlined text-2xl">my_location</span>
+              <div className="w-10 h-10 bg-zinc-900 border border-zinc-700 text-white flex items-center justify-center mb-6">
+                <span className="material-symbols-outlined text-xl">my_location</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">
-                Location-Based Trends
+              <h3 className="text-lg font-bold text-white uppercase mb-2 group-hover:text-zinc-300 transition-colors">
+                Geo-Targeting Controls
               </h3>
-              <p className="text-xs text-slate-300 leading-relaxed mb-4">
-                Optional location permissions allow tailored regional trends and hyper-local search discovery while giving you total control over location toggles.
+              <p className="text-xs font-mono text-zinc-400 leading-relaxed mb-6">
+                Optional location permissions enable hyper-local search discovery with total user toggle ownership.
               </p>
             </div>
 
-            <div className="flex items-center justify-between p-3 rounded-xl bg-slate-900/90 border border-slate-800">
-              <span className="text-xs font-mono text-slate-300">Geo-Targeting</span>
-              <span className="text-xs font-extrabold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/30">
-                Customizable
-              </span>
+            <div className="p-3 bg-zinc-950 border border-zinc-800 flex items-center justify-between">
+              <span className="text-xs font-mono text-zinc-400">Geo Toggle</span>
+              <span className="text-xs font-mono text-white font-bold">User-Controlled</span>
             </div>
           </motion.div>
 
-          {/* Card 5: Privacy & Account Controls (Span 2) */}
+          {/* Row 2: Profile Avatar Sync (Span 4) */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
             whileHover={{ y: -4 }}
-            className="bento-card bento-span-2 flex flex-col sm:flex-row items-center justify-between gap-6 group"
+            className="md:col-span-4 mono-card p-6 border border-zinc-800 flex flex-col justify-between group"
           >
-            <div className="space-y-3 max-w-lg">
-              <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-amber-400">shield_lock</span>
-                <span className="text-xs font-mono font-bold text-amber-400 uppercase">Privacy & User Rights</span>
+            <div>
+              <div className="w-10 h-10 bg-zinc-900 border border-zinc-700 text-white flex items-center justify-center mb-6">
+                <span className="material-symbols-outlined text-xl">account_circle</span>
               </div>
-              <h3 className="text-2xl font-bold text-white group-hover:text-amber-400 transition-colors">
-                Your Data, Your Ownership
+              <h3 className="text-lg font-bold text-white uppercase mb-2 group-hover:text-zinc-300 transition-colors">
+                Workspace Personalization
               </h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                Full transparency with end-to-end user privacy standards. Instant self-service account deletion dispatch, data erasure tools, and profile avatar customization.
+              <p className="text-xs font-mono text-zinc-400 leading-relaxed mb-6">
+                Upload custom profile avatars via gallery permissions and sync preferences across your mobile devices.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full sm:w-auto">
-              <a
-                href="/delete-account"
-                className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 hover:bg-red-500/20 text-xs font-bold transition-colors text-center"
-              >
-                Delete Account
-              </a>
-              <a
-                href="/privacy"
-                className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 hover:bg-slate-700 text-xs font-bold transition-colors text-center"
-              >
-                Privacy Policy
-              </a>
+            <div className="p-3 bg-zinc-950 border border-zinc-800 flex items-center justify-between">
+              <span className="text-xs font-mono text-zinc-400">Profile Sync</span>
+              <span className="text-xs font-mono text-white font-bold">Encrypted</span>
+            </div>
+          </motion.div>
+
+          {/* Row 3: Multi-Engine Query (Span 12 - Bottom placement in reversed layout) */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            whileHover={{ y: -4 }}
+            className="md:col-span-12 mono-card p-8 border border-zinc-800 flex flex-col justify-between group"
+          >
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-white text-black flex items-center justify-center font-bold">
+                  <span className="material-symbols-outlined text-xl">travel_explore</span>
+                </div>
+                <h3 className="text-2xl font-bold text-white uppercase group-hover:text-zinc-300 transition-colors">
+                  Simultaneous Multi-Engine Search
+                </h3>
+              </div>
+              <span className="mono-tag text-[11px]">
+                5x Parallel Sync
+              </span>
+            </div>
+
+            <p className="text-xs font-mono text-zinc-400 leading-relaxed mb-6">
+              Dispatch your query across Google, Brave, Bing, and DuckDuckGo in parallel. Compare results side-by-side without opening multiple external browser apps.
+            </p>
+
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-zinc-800 font-mono text-xs">
+              <div className="p-3 bg-zinc-950 border border-zinc-800 text-center text-white">
+                Google Engine
+              </div>
+              <div className="p-3 bg-zinc-950 border border-zinc-800 text-center text-white">
+                Brave Search
+              </div>
+              <div className="p-3 bg-zinc-950 border border-zinc-800 text-center text-white">
+                DuckDuckGo
+              </div>
+              <div className="p-3 bg-zinc-950 border border-zinc-800 text-center text-white">
+                Microsoft Bing
+              </div>
             </div>
           </motion.div>
 
