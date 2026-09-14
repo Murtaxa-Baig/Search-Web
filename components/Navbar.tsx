@@ -39,9 +39,7 @@ export default function Navbar() {
                 <span className="text-white text-xl font-black tracking-tight uppercase group-hover:text-zinc-300 transition-colors">
                   Google Search
                 </span>
-                <span className="px-2 py-0.5 text-[10px] font-mono font-bold uppercase tracking-wider bg-white text-black rounded-none">
                   
-                </span>
               </div>
               <span className="text-[11px] text-zinc-400 font-mono hidden sm:block">
                 Simultaneous Search & Offline AI
