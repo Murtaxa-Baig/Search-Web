@@ -8,34 +8,33 @@ export default function CTASection() {
     const pathname = usePathname();
 
     return (
-        <section className="py-24 bg-white dark:bg-gray-900 border-y border-gray-100 dark:border-gray-800">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-24 bg-white dark:bg-gray-900 border-y border-gray-200/80 dark:border-gray-800 relative overflow-hidden">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="brand-gradient rounded-[2.5rem] p-12 md:p-20 text-center text-white relative overflow-hidden shadow-2xl"
+                    className="brand-gradient rounded-3xl p-12 md:p-20 text-center text-white relative overflow-hidden shadow-2xl"
                 >
-                    <div className="absolute inset-0 bg-black/10"></div>
                     <div className="relative z-10">
                         <motion.h2
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.2 }}
-                            className="text-4xl md:text-5xl font-black mb-6"
+                            className="text-3xl md:text-5xl font-extrabold mb-6 tracking-tight"
                         >
-                            Ready to Elevate Your Visual Creative Identity?
+                            Ready for Faster, Multi-Browser Search?
                         </motion.h2>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.3 }}
-                            className="text-xl opacity-90 mb-10 max-w-2xl mx-auto font-medium"
+                            className="text-base sm:text-lg opacity-90 mb-10 max-w-2xl mx-auto font-medium leading-relaxed"
                         >
-                            Experience the future of AI image generation and enhancement. Design professional-grade visual projects instantly with our advanced AI tools. Start your creative journey today.
+                            Execute queries simultaneously across Google, Brave, Bing, and DuckDuckGo, or download local offline AI models. Download the app today.
                         </motion.p>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -54,9 +53,9 @@ export default function CTASection() {
                                             document.getElementById("features")?.scrollIntoView({ behavior: "smooth" });
                                         }
                                     }}
-                                    className="w-full sm:w-auto bg-transparent border-2 border-white/40 hover:border-white text-white font-bold py-4 px-12 rounded-xl text-lg transition-all"
+                                    className="w-full sm:w-auto bg-white/10 backdrop-blur-md border border-white/40 hover:border-white text-white font-bold py-4 px-10 rounded-xl text-base transition-all cursor-pointer"
                                 >
-                                    Explore Studio Tools
+                                    Explore Search Features
                                 </motion.button>
                             </Link>
                         </motion.div>
@@ -66,3 +65,4 @@ export default function CTASection() {
         </section>
     );
 }
+

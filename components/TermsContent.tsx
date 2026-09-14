@@ -9,32 +9,37 @@ export default function TermsContent() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="mb-12 border-b border-gray-100 dark:border-gray-800 pb-8 text-center md:text-left"
+        className="mb-12 border-b border-gray-200/80 dark:border-gray-800 pb-8 text-center md:text-left"
       >
-        <h1 className="text-4xl md:text-5xl mt-8 font-black text-[#131118] dark:text-white mb-4">
+        <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 mb-4">
+          <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+          <span>Official Legal Terms</span>
+        </span>
+        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
           Terms & Conditions
         </h1>
-        <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 text-sm">
-          <span className="text-gray-500 dark:text-gray-400">
+        <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs sm:text-sm">
+          <span className="text-gray-500 dark:text-gray-400 font-medium">
             Last Updated: July 31, 2026
           </span>
-          <span className="hidden sm:inline text-gray-300">|</span>
+          <span className="hidden sm:inline text-gray-300 dark:text-gray-700">|</span>
           <a
-            className="text-primary font-medium hover:underline flex items-center gap-1"
+            className="text-cyan-500 font-bold hover:underline flex items-center gap-1"
             href="mailto:supportappnaya@gmail.com"
           >
             <span className="material-symbols-outlined text-sm">mail</span>
-            supportappnaya@gmail.com
+            <span>supportappnaya@gmail.com</span>
           </a>
         </div>
       </motion.header>
-      <div className="space-y-12">
+
+      <div className="space-y-10">
         {[
           {
             id: "acceptance",
             title: "1. Acceptance of Agreement",
             content: (
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                 By accessing or using Google Search (“Service”), you agree to be
                 legally bound by these Terms & Conditions. If you disagree with
                 any provision, you must immediately cease use of the Service.
@@ -45,15 +50,15 @@ export default function TermsContent() {
             id: "definitions",
             title: "2. Definitions",
             content: (
-              <ul className="space-y-3 text-gray-600 dark:text-gray-400">
+              <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-300">
                 <li className="flex gap-3">
-                  <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">
+                  <span className="font-bold text-gray-900 dark:text-white min-w-[100px]">
                     “Platform”:
                   </span>
-                  <span>Refers to the Google Search website and applications.</span>
+                  <span>Refers to the Google Search website, mobile application, and simultaneous search services.</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">
+                  <span className="font-bold text-gray-900 dark:text-white min-w-[100px]">
                     “User”:
                   </span>
                   <span>
@@ -61,11 +66,11 @@ export default function TermsContent() {
                   </span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">
-                    “User Content”:
+                  <span className="font-bold text-gray-900 dark:text-white min-w-[100px]">
+                    “User Data”:
                   </span>
                   <span>
-                    Refers to any watchlists, custom reviews, ratings, search logs, or profile details saved using the Service.
+                    Refers to any custom search parameters, selected browser presets, offline model downloads, or user profile details.
                   </span>
                 </li>
               </ul>
@@ -75,26 +80,24 @@ export default function TermsContent() {
             id: "services",
             title: "3. Description of Services",
             content: (
-              <>
-                <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                  Google Search provides simultaneous multi-browser search and WebViews integration inside the application, as well as offline search enabled via downloaded local AI models for premium users.
-                </p>
-              </>
+              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                Google Search provides simultaneous multi-browser search execution, in-app active WebViews integration, and local offline AI model search functionality for mobile users.
+              </p>
             ),
           },
           {
             id: "subscriptions",
-            title: "4. Subscriptions & Free Trials",
+            title: "4. Subscriptions & 3-Day Free Trial",
             content: (
-              <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              <div className="space-y-3 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
                 <p>
-                  Google Search offers premium subscription plans (weekly and monthly auto-renewable subscription plans) granting unlimited access to offline search features, in-app WebView integrations, and downloaded AI models.
+                  Google Search offers auto-renewable weekly and monthly subscription plans granting full access to offline AI search models, parallel WebViews, and customizable location trends.
                 </p>
                 <p>
-                  New users are eligible for a **3-day free trial** of the subscription plan, allowing full access to explore the complete potential of Google Search before charging begins.
+                  New users are eligible for a **3-day free trial**, allowing complete access to test all feature capabilities before billing commences.
                 </p>
                 <p>
-                  You have the explicit right to cancel your subscription at any time. When canceled, your subscription remains active and premium features remain accessible until the end of the current billing cycle.
+                  Subscriptions may be canceled at any time via App Store or Google Play Store settings. Upon cancellation, access remains available until the billing cycle ends.
                 </p>
               </div>
             ),
@@ -103,93 +106,84 @@ export default function TermsContent() {
             id: "usage",
             title: "5. Acceptable Use Policy",
             content: (
-              <>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  You agree NOT to:
+              <div className="space-y-4">
+                <p className="text-sm text-gray-600 dark:text-gray-300">
+                  You explicitly agree NOT to:
                 </p>
                 <div className="grid md:grid-cols-2 gap-3">
                   {[
-                    "Attempt to scrape, harvest, or crawl search database details from the Service in a manner that violates third-party search engine policies",
-                    "Use search queries to generate harmful, offensive, or harassing content",
-                    "Circumvent search parameters or abuse the offline model downloads",
-                    "Attempt to reverse engineer the search models or software",
-                    "Infringe upon third-party intellectual property or copy original layouts",
+                    "Attempt to reverse engineer search models or binary assets",
+                    "Use automated scripts to abuse search parameters",
+                    "Distribute malicious content via in-app WebViews",
+                    "Circumvent subscription verification barriers",
+                    "Violate third-party search engine policies",
                   ].map((item, i) => (
                     <div
                       key={i}
-                      className="flex gap-2 items-center p-3 rounded-lg bg-red-50/50 dark:bg-red-900/10 border border-red-100 dark:border-red-900/20"
+                      className="flex gap-2.5 items-center p-3.5 rounded-xl bg-red-500/10 border border-red-500/20 text-xs font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      <span className="material-symbols-outlined text-red-500 text-sm">
+                      <span className="material-symbols-outlined text-red-500 text-sm shrink-0">
                         block
                       </span>
-                      <span className="text-sm text-gray-700 dark:text-gray-300">
-                        {item}
-                      </span>
+                      <span>{item}</span>
                     </div>
                   ))}
                 </div>
-              </>
+              </div>
             ),
           },
           {
             id: "intellectual",
             title: "6. Intellectual Property",
             content: (
-              <div className="space-y-4 text-gray-600 dark:text-gray-400">
-                <p className="leading-relaxed">
-                  Google Search owns the downloaded offline AI models, unified search interface layouts, software, and brand. You retain ownership of your custom search logs and user profiles created, subject to these terms.
-                </p>
-              </div>
+              <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                AppNaya Technologies owns all proprietary designs, software code, offline AI models, and brand logos associated with Google Search. Users retain ownership of personal profile settings and search query parameters.
+              </p>
             ),
           },
           {
             id: "liability",
             title: "7. Limitation of Liability",
             content: (
-              <>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  To the maximum extent permitted by law, Google Search shall not be
-                  liable for:
+              <div className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+                <p>
+                  To the maximum extent permitted by law, Google Search and AppNaya Technologies shall not be liable for indirect damages, third-party search result variations, or temporary network outages.
                 </p>
-                <ul className="space-y-2 text-gray-600 dark:text-gray-400 pl-4">
-                  <li>• Indirect or consequential damages</li>
-                  <li>• Inaccuracy of search results or offline AI-generated responses</li>
-                  <li>• Technical interruptions or data loss</li>
-                </ul>
-              </>
+              </div>
             ),
           },
           {
             id: "contact",
-            title: "8. Contact Information",
+            title: "8. Legal Inquiries",
             content: (
-              <div className="text-center p-8 rounded-2xl bg-primary/5 border border-primary/10">
-                <h4 className="text-xl font-bold text-[#131118] dark:text-white mb-2">
-                  Legal Inquiries
+              <div className="text-center p-8 rounded-2xl glass-card border border-cyan-500/20 shadow-lg space-y-4">
+                <h4 className="text-lg font-bold text-gray-900 dark:text-white">
+                  Contact Legal & Support
                 </h4>
-                <p className="text-[#6b608a] dark:text-[#a097bd] mb-6">
-                  For legal inquiries, please contact us at:
+                <p className="text-xs text-gray-600 dark:text-gray-300 max-w-md mx-auto leading-relaxed">
+                  For formal legal notices or questions regarding these terms, reach out directly to our support inbox:
                 </p>
                 <a
                   href="mailto:supportappnaya@gmail.com"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:opacity-90 transition-opacity"
+                  className="inline-flex items-center gap-2 px-6 py-3 brand-gradient text-white rounded-xl font-bold text-xs shadow-lg shadow-cyan-500/20 hover:scale-[1.02] transition-transform"
                 >
-                  <span className="material-symbols-outlined">mail</span>
-                  supportappnaya@gmail.com
+                  <span className="material-symbols-outlined text-sm">mail</span>
+                  <span>supportappnaya@gmail.com</span>
                 </a>
               </div>
             ),
           },
-        ].map((section, index) => (
+        ].map((section) => (
           <motion.section
             key={section.id}
             id={section.id}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.5 }}
+            className="glass-card p-6 sm:p-8 rounded-2xl border border-gray-200/80 dark:border-gray-800/80 shadow-sm"
           >
-            <h2 className="text-2xl font-bold text-[#131118] dark:text-white mb-4">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
               {section.title}
             </h2>
             {section.content}
@@ -199,3 +193,4 @@ export default function TermsContent() {
     </div>
   );
 }
+

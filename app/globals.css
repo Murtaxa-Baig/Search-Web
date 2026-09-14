@@ -1,68 +1,136 @@
 @import "tailwindcss";
+
 @theme {
-  --color-primary: #6366F1;
-  --color-brand-purple: #9333EA;
-  --color-brand-blue: #0C5CFB;
-  --color-background-light: #f6f5f8;
-  --color-background-dark: #0F0C1D;
+  --color-primary: #00F2FE;
+  --color-primary-glow: #00E5FF;
+  --color-brand-cyan: #00F2FE;
+  --color-brand-teal: #10B981;
+  --color-brand-purple: #8B5CF6;
+  --color-brand-blue: #0C66FF;
+  --color-brand-coral: #FF416C;
+  --color-background-light: #F8FAFC;
+  --color-background-dark: #030712;
+  --color-card-dark: #090D16;
 
-  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
-}
-
-@layer utilities {
-  .brand-gradient {
-    background: linear-gradient(135deg, #0C5CFB 0%, #9333EA 100%);
-  }
-  .identity-gradient {
-    background: linear-gradient(135deg, #9333EA 0%, #C026D3 100%);
-  }
-}
-
-@layer components {
-  .brand-gradient-hover:hover {
-    opacity: 0.9;
-  }
-
-  .feature-card {
-    transition: all 0.2s ease-in-out;
-  }
-
-  .feature-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  }
-
-  .sticky-nav {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    backdrop-filter: blur(8px);
-  }
-
-  .timeline-line {
-    width: 2px;
-    background: linear-gradient(180deg, #0C5CFB 0%, #9333EA 100%);
-  }
-
-  .hero-mesh {
-    background-image: radial-gradient(at 0% 0%, rgba(12, 135, 251, 0.1) 0, transparent 50%),
-      radial-gradient(at 100% 100%, rgba(147, 51, 234, 0.1) 0, transparent 50%);
-  }
+  --font-sans: 'Plus Jakarta Sans', Inter, ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
-  --background: #f6f5f8;
-  --foreground: #131118;
+  --background: #F8FAFC;
+  --foreground: #0F172A;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0F0C1D;
-    --foreground: #ffffff;
+    --background: #030712;
+    --foreground: #F8FAFC;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Gradient Utility Classes */
+.brand-gradient {
+  background: linear-gradient(135deg, #00F2FE 0%, #0C66FF 50%, #8B5CF6 100%);
+}
+
+.brand-gradient-text {
+  background: linear-gradient(135deg, #00F2FE 0%, #38BDF8 40%, #A855F7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.teal-gradient-text {
+  background: linear-gradient(135deg, #10B981 0%, #00F2FE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aurora-bg {
+  background: 
+    radial-gradient(circle at 0% 0%, rgba(0, 242, 254, 0.18) 0%, transparent 40%),
+    radial-gradient(circle at 100% 30%, rgba(139, 92, 246, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 50% 90%, rgba(16, 185, 129, 0.12) 0%, transparent 50%),
+    #030712;
+}
+
+/* Bento Grid Utilities */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .bento-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .bento-span-3 {
+    grid-column: span 3 / span 3;
+  }
+}
+
+.bento-card {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-card:hover {
+  border-color: rgba(0, 242, 254, 0.35);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(0, 242, 254, 0.15);
+}
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-nav {
+  background: rgba(3, 7, 18, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.hero-mesh {
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(0, 242, 254, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 242, 254, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 242, 254, 0.4);
 }

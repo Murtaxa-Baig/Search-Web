@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev 2>&1 | grep --line-buffered -v 'MallocStackLogging'",
+    "dev:webpack": "next dev --webpack",
+    "dev:turbo": "next dev --turbo",
+    "clean": "rm -rf .next .turbo node_modules/.cache",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

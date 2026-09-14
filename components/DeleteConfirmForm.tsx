@@ -30,12 +30,13 @@ function DeleteConfirmFormContent() {
     useEffect(() => {
         const urlToken = searchParams.get("token");
         if (urlToken) {
-            setToken(urlToken);
+            setToken((prev) => (prev !== urlToken ? urlToken : prev));
             setIsTokenManual(false);
         } else {
             setIsTokenManual(true);
         }
     }, [searchParams]);
+
 
     // Countdown logic after success
     useEffect(() => {
@@ -51,13 +52,12 @@ function DeleteConfirmFormContent() {
 
     // Handle OTP character change
     const handleOtpChange = (value: string, index: number) => {
-        if (!/^[0-9]?$/.test(value)) return; // Allow only single digits
+        if (!/^[0-9]?$/.test(value)) return;
 
         const newOtp = [...otp];
         newOtp[index] = value;
         setOtp(newOtp);
 
-        // Move to next input on typing
         if (value && index < 5) {
             inputRefs.current[index + 1]?.focus();
         }
@@ -136,16 +136,16 @@ function DeleteConfirmFormContent() {
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 20 }}
                         exit={{ opacity: 0, y: -50 }}
-                        className={`fixed top-4 left-1/2 -translate-x-1/2 z-[100] px-6 py-3 rounded-xl shadow-2xl flex items-center gap-3 border ${
+                        className={`fixed top-6 left-1/2 -translate-x-1/2 z-[100] px-6 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3 border text-sm font-bold ${
                             toast.type === "success" 
                                 ? "bg-emerald-500 border-emerald-400 text-white" 
                                 : "bg-red-500 border-red-400 text-white"
                         }`}
                     >
-                        <span className="material-symbols-outlined">
+                        <span className="material-symbols-outlined text-xl">
                             {toast.type === "success" ? "check_circle" : "error"}
                         </span>
-                        <p className="font-medium">{toast.message}</p>
+                        <p>{toast.message}</p>
                     </motion.div>
                 )}
             </AnimatePresence>
@@ -160,111 +160,114 @@ function DeleteConfirmFormContent() {
                         className="space-y-6"
                     >
                         <div className="text-center space-y-2">
-                            <h1 className="text-3xl font-black text-gray-900 dark:text-white tracking-tight">
-                                Confirm Your Account Deletion
+                            <span className="text-xs font-extrabold uppercase tracking-widest text-red-500 bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20">
+                                Final Verification
+                            </span>
+                            <h1 className="text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+                                Confirm Account Deletion
                             </h1>
-                            <p className="text-gray-500 dark:text-gray-400 text-base">
-                                Verify your identity to permanently remove your Google Search profile.
+                            <p className="text-gray-500 dark:text-gray-400 text-sm">
+                                Enter your security token and 6-digit confirmation code to permanently purge your profile.
                             </p>
                         </div>
 
-                        {/* Warnings block */}
-                        <div className="bg-red-50 dark:bg-red-950/20 border border-red-150 dark:border-red-900/30 p-5 rounded-2xl flex gap-4 items-start shadow-sm">
-                            <span className="material-symbols-outlined text-red-600 dark:text-red-400 text-2xl shrink-0 mt-0.5 animate-pulse">
+                        {/* Critical warning block */}
+                        <div className="p-4 rounded-2xl bg-red-500/10 border border-red-500/20 flex items-start gap-3">
+                            <span className="material-symbols-outlined text-red-500 text-2xl shrink-0 mt-0.5 animate-pulse">
                                 warning
                             </span>
                             <div className="space-y-1">
-                                <h3 className="text-sm font-bold text-red-800 dark:text-red-300">
-                                    CRITICAL WARNING
+                                <h3 className="text-xs font-bold text-red-600 dark:text-red-400 uppercase tracking-wider">
+                                    IRREVERSIBLE DELETION
                                 </h3>
-                                <p className="text-xs text-red-700 dark:text-red-400 leading-relaxed">
-                                     This action is permanent and completely irreversible. All your custom browser search preferences, history, saved search configurations, profile settings, and active subscriptions will be deleted immediately.
-                                 </p>
+                                <p className="text-xs text-gray-600 dark:text-gray-300 leading-relaxed">
+                                    This action cannot be undone. All custom browser preferences, search logs, offline model downloads, and active subscriptions will be purged.
+                                </p>
                             </div>
                         </div>
 
-                        <div className="p-1 rounded-2xl shadow-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 overflow-hidden">
-                            <div className="p-6 sm:p-8 space-y-6">
-                                {/* Token status / Manual selection */}
-                                {token && !isTokenManual ? (
-                                    <div className="flex items-center justify-between bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/30 px-4 py-3 rounded-xl">
-                                        <div className="flex items-center gap-2 text-emerald-800 dark:text-emerald-300 text-xs font-semibold">
-                                            <span className="material-symbols-outlined text-sm">lock</span>
-                                            <span>Secure Token Loaded</span>
-                                        </div>
-                                        <button 
-                                            onClick={() => setIsTokenManual(true)}
-                                            className="text-xs text-primary hover:underline font-bold transition-all"
-                                        >
-                                            Change Token
-                                        </button>
+                        <div className="glass-card p-6 sm:p-8 rounded-3xl border border-gray-200/80 dark:border-gray-800 shadow-xl space-y-6">
+                            
+                            {/* Token Status / Manual Switch */}
+                            {token && !isTokenManual ? (
+                                <div className="flex items-center justify-between bg-emerald-500/10 border border-emerald-500/20 px-4 py-3 rounded-xl">
+                                    <div className="flex items-center gap-2 text-emerald-600 dark:text-emerald-400 text-xs font-bold">
+                                        <span className="material-symbols-outlined text-base">lock</span>
+                                        <span>Security Token Loaded</span>
                                     </div>
-                                ) : (
-                                    <div className="flex flex-col gap-2">
-                                        <label className="text-sm font-bold text-gray-900 dark:text-white">
-                                            Security Deletion Token
-                                        </label>
-                                        <input
-                                            value={token}
-                                            onChange={(e) => setToken(e.target.value)}
-                                            className="form-input flex w-full rounded-lg text-[#131118] dark:text-gray-200 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 h-12 px-4 text-xs font-mono leading-normal placeholder:text-gray-400 dark:placeholder:text-gray-600"
-                                            placeholder="Paste security token from email link (if not pre-filled)"
-                                            type="text"
-                                        />
-                                    </div>
-                                )}
-
-                                {/* OTP Section */}
-                                <div className="space-y-3">
-                                    <label className="block text-sm font-bold text-gray-900 dark:text-white text-center">
-                                        Enter 6-Digit Verification Code
-                                    </label>
-                                    
-                                    <div className="flex justify-center gap-2 sm:gap-3" onPaste={handlePaste}>
-                                        {otp.map((digit, idx) => (
-                                            <input
-                                                key={idx}
-                                                type="text"
-                                                inputMode="numeric"
-                                                maxLength={1}
-                                                value={digit}
-                                                ref={(el) => { inputRefs.current[idx] = el; }}
-                                                onChange={(e) => handleOtpChange(e.target.value, idx)}
-                                                onKeyDown={(e) => handleKeyDown(e, idx)}
-                                                className="w-11 h-14 sm:w-14 sm:h-16 text-center text-xl sm:text-2xl font-black rounded-xl border-2 border-gray-300 dark:border-gray-700 focus:border-red-500 focus:ring-2 focus:ring-red-500/20 bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-all shadow-inner focus:outline-none"
-                                            />
-                                        ))}
-                                    </div>
-                                    <p className="text-center text-xs text-gray-400 dark:text-gray-500">
-                                        Type or paste the verification code sent to your email.
-                                    </p>
-                                </div>
-
-                                <div className="pt-4">
-                                    <button
-                                        onClick={handleConfirmDelete}
-                                        disabled={!canSubmit}
-                                        className={`w-full flex items-center justify-center rounded-xl h-14 px-8 bg-red-600 text-white hover:bg-red-700 text-base font-bold leading-normal transition-all shadow-lg shadow-red-600/20 active:scale-[0.98] ${
-                                            !canSubmit ? "opacity-50 cursor-not-allowed shadow-none" : ""
-                                        }`}
+                                    <button 
+                                        onClick={() => setIsTokenManual(true)}
+                                        className="text-xs text-cyan-500 hover:underline font-bold transition-all cursor-pointer"
                                     >
-                                        {isLoading ? (
-                                            <div className="flex items-center gap-2">
-                                                <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                                                <span>Deleting Permanently...</span>
-                                            </div>
-                                        ) : (
-                                            "Delete permanently"
-                                        )}
+                                        Edit Token
                                     </button>
                                 </div>
+                            ) : (
+                                <div className="flex flex-col gap-2">
+                                    <label className="text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-wider">
+                                        Security Deletion Token
+                                    </label>
+                                    <input
+                                        value={token}
+                                        onChange={(e) => setToken(e.target.value)}
+                                        className="w-full bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-3 text-xs font-mono text-gray-900 dark:text-white outline-none focus:ring-2 focus:ring-red-500/50"
+                                        placeholder="Paste token from email link if not loaded"
+                                        type="text"
+                                    />
+                                </div>
+                            )}
+
+                            {/* OTP Entry Grid */}
+                            <div className="space-y-3">
+                                <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 text-center uppercase tracking-wider">
+                                    Enter 6-Digit Code
+                                </label>
+                                
+                                <div className="flex justify-center gap-2 sm:gap-3" onPaste={handlePaste}>
+                                    {otp.map((digit, idx) => (
+                                        <input
+                                            key={idx}
+                                            type="text"
+                                            inputMode="numeric"
+                                            maxLength={1}
+                                            value={digit}
+                                            ref={(el) => { inputRefs.current[idx] = el; }}
+                                            onChange={(e) => handleOtpChange(e.target.value, idx)}
+                                            onKeyDown={(e) => handleKeyDown(e, idx)}
+                                            className="w-11 h-14 sm:w-13 sm:h-15 text-center text-xl sm:text-2xl font-black rounded-xl border-2 border-gray-300 dark:border-gray-700 focus:border-red-500 focus:ring-2 focus:ring-red-500/20 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-all outline-none"
+                                        />
+                                    ))}
+                                </div>
+                                <p className="text-center text-xs text-gray-400">
+                                    Type or paste the 6-digit confirmation code from your email.
+                                </p>
                             </div>
+
+                            <button
+                                onClick={handleConfirmDelete}
+                                disabled={!canSubmit}
+                                className={`w-full flex items-center justify-center gap-2 rounded-xl py-4 bg-red-600 text-white font-bold text-base transition-all shadow-lg shadow-red-600/20 cursor-pointer ${
+                                    !canSubmit ? "opacity-50 cursor-not-allowed shadow-none" : "hover:bg-red-700 hover:scale-[1.01]"
+                                }`}
+                            >
+                                {isLoading ? (
+                                    <div className="flex items-center gap-2">
+                                        <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                                        <span>Purging Account Data...</span>
+                                    </div>
+                                ) : (
+                                    <>
+                                        <span className="material-symbols-outlined text-lg">delete_forever</span>
+                                        <span>Delete Permanently Now</span>
+                                    </>
+                                )}
+                            </button>
                         </div>
 
                         <div className="text-center">
                             <Link
                                 href="/delete-account"
-                                className="text-sm font-semibold text-gray-500 dark:text-gray-400 hover:text-primary transition-all flex items-center gap-1 justify-center"
+                                className="text-xs font-bold text-gray-500 dark:text-gray-400 hover:text-cyan-400 transition-all inline-flex items-center gap-1"
                             >
                                 <span className="material-symbols-outlined text-sm">arrow_back</span>
                                 <span>Back to Account Deletion Request</span>
@@ -276,29 +279,26 @@ function DeleteConfirmFormContent() {
                         key="success-container"
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        className="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-8 rounded-2xl shadow-2xl text-center space-y-6 max-w-md mx-auto"
+                        className="glass-card border border-gray-200/80 dark:border-gray-800 p-8 rounded-3xl shadow-2xl text-center space-y-6 max-w-md mx-auto"
                     >
-                        <div className="w-20 h-20 bg-red-50 dark:bg-red-950/40 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center mx-auto">
-                            <span className="material-symbols-outlined text-4xl animate-ping absolute duration-1000 opacity-25">
-                                check_circle
-                            </span>
-                            <span className="material-symbols-outlined text-4xl relative">
+                        <div className="w-20 h-20 bg-red-500/10 text-red-500 rounded-full flex items-center justify-center mx-auto border border-red-500/20 relative">
+                            <span className="material-symbols-outlined text-4xl">
                                 check_circle
                             </span>
                         </div>
 
                         <div className="space-y-2">
                             <h2 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-                                Account Deleted Successfully
+                                Account Deleted
                             </h2>
-                            <p className="text-gray-500 dark:text-gray-400 text-sm">
-                                Your account and all associated data have been permanently removed. We are sorry to see you go.
+                            <p className="text-gray-500 dark:text-gray-400 text-xs sm:text-sm leading-relaxed">
+                                Your Google Search profile and all associated data have been permanently removed.
                             </p>
                         </div>
 
-                        <div className="bg-gray-50 dark:bg-gray-850/60 py-3 px-4 rounded-xl inline-block border border-gray-100 dark:border-gray-800">
+                        <div className="p-3 rounded-xl bg-gray-50 dark:bg-gray-900 inline-block border border-gray-200/60 dark:border-gray-800">
                             <p className="text-xs text-gray-500 dark:text-gray-400 font-medium">
-                                Redirecting you back to the home page in <strong className="text-primary font-bold text-sm">{countdown}</strong> seconds...
+                                Redirecting to home page in <strong className="text-cyan-400 font-bold">{countdown}</strong> seconds...
                             </p>
                         </div>
                     </motion.div>
@@ -312,10 +312,11 @@ export default function DeleteConfirmForm() {
     return (
         <Suspense fallback={
             <div className="flex-grow flex items-center justify-center py-20">
-                <div className="w-10 h-10 border-4 border-primary/35 border-t-primary rounded-full animate-spin" />
+                <div className="w-10 h-10 border-4 border-cyan-400/30 border-t-cyan-400 rounded-full animate-spin" />
             </div>
         }>
             <DeleteConfirmFormContent />
         </Suspense>
     );
 }
+

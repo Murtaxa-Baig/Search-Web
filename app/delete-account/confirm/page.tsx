@@ -4,7 +4,7 @@ import DeleteConfirmForm from "@/components/DeleteConfirmForm";
 
 export default function DeleteAccountConfirmPage() {
     return (
-        <main className="min-h-screen flex flex-col justify-between">
+        <main className="min-h-screen bg-background-light dark:bg-background-dark text-gray-900 dark:text-white flex flex-col justify-between">
             <Navbar />
             <div className="flex-grow flex items-center justify-center">
                 <DeleteConfirmForm />
@@ -13,3 +13,4 @@ export default function DeleteAccountConfirmPage() {
         </main>
     );
 }
+

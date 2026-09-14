@@ -33,16 +33,17 @@ export default function PrivacyContent() {
           const top = el.offsetTop;
           const height = el.offsetHeight;
           if (scrollPosition >= top && scrollPosition < top + height) {
-            setActiveSection(section.id);
+            setActiveSection((prev) => (prev !== section.id ? section.id : prev));
             break;
           }
         }
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -68,29 +69,29 @@ export default function PrivacyContent() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="mb-16 pb-10 border-b border-gray-200 dark:border-gray-800 text-center md:text-left"
+        className="mb-16 pb-10 border-b border-gray-200/80 dark:border-gray-800 text-center md:text-left"
       >
-        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary mb-4">
-          <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
-          Privacy Protection Guaranteed
+        <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 mb-4">
+          <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+          <span>Privacy Protection Guaranteed</span>
         </span>
-        <h1 className="text-4xl md:text-6xl font-black tracking-tight text-[#131118] dark:text-white mb-6">
+        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-6">
           Privacy Policy
         </h1>
-        <p className="text-[#6b608a] dark:text-[#a097bd] text-lg md:text-xl font-normal leading-relaxed max-w-3xl mb-8">
+        <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg font-normal leading-relaxed max-w-3xl mb-8">
           Google Search is dedicated to maintaining transparent information about how we collect, use, process, and protect your data while using our simultaneous multi-browser search, WebView integration, and offline AI search services.
         </p>
-        <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm">
+        <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-xs sm:text-sm">
           <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
             <span className="material-symbols-outlined text-base">calendar_today</span>
-            <span>Last Updated: <span className="font-semibold text-gray-800 dark:text-gray-200">July 31, 2026</span></span>
+            <span>Last Updated: <span className="font-bold text-gray-800 dark:text-gray-200">July 31, 2026</span></span>
           </div>
           <span className="hidden sm:inline text-gray-300 dark:text-gray-700">|</span>
           <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
             <span className="material-symbols-outlined text-base">mail</span>
             <span>Contact Email: </span>
             <a
-              className="text-primary font-semibold hover:underline"
+              className="text-cyan-500 font-bold hover:underline"
               href="mailto:supportappnaya@gmail.com"
             >
               supportappnaya@gmail.com
@@ -104,9 +105,9 @@ export default function PrivacyContent() {
 
         {/* Left Side: Sticky Navigation */}
         <aside className="hidden lg:block lg:col-span-4 xl:col-span-3">
-          <div className="sticky top-24 max-h-[calc(100vh-140px)] overflow-y-auto pr-4 space-y-6 scrollbar-thin scrollbar-thumb-gray-200 dark:scrollbar-thumb-gray-800">
-            <div className="p-5 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm">
-              <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 px-2">
+          <div className="sticky top-28 max-h-[calc(100vh-140px)] overflow-y-auto pr-2 space-y-6 scrollbar-none">
+            <div className="p-5 rounded-2xl glass-card border border-gray-200/80 dark:border-gray-800 shadow-sm">
+              <h3 className="text-[11px] font-extrabold text-gray-400 uppercase tracking-widest mb-4 px-2">
                 Table of Contents
               </h3>
               <nav className="space-y-1">
@@ -114,12 +115,13 @@ export default function PrivacyContent() {
                   <button
                     key={section.id}
                     onClick={() => scrollToSection(section.id)}
-                    className={`w-full text-left px-3 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-2 ${activeSection === section.id
-                        ? "bg-primary text-white shadow-md shadow-primary/25"
-                        : "text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-primary dark:hover:text-white"
-                      }`}
+                    className={`w-full text-left px-3 py-2 rounded-xl text-xs font-semibold transition-all duration-200 flex items-center gap-2 cursor-pointer ${
+                      activeSection === section.id
+                        ? "brand-gradient text-white shadow-md shadow-cyan-500/20"
+                        : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-cyan-400"
+                    }`}
                   >
-                    <span className={`w-1.5 h-1.5 rounded-full ${activeSection === section.id ? "bg-white" : "bg-transparent"}`}></span>
+                    <span className={`w-1.5 h-1.5 rounded-full ${activeSection === section.id ? "bg-white" : "bg-transparent"}`} />
                     <span className="truncate">{section.label}</span>
                   </button>
                 ))}
@@ -128,20 +130,21 @@ export default function PrivacyContent() {
 
             {/* Quick Contact Info Box */}
             <div className="p-5 rounded-2xl brand-gradient text-white shadow-lg space-y-3">
-              <h4 className="font-bold text-lg">Need Support?</h4>
+              <h4 className="font-extrabold text-base">Need Support?</h4>
               <p className="text-xs text-white/80 leading-relaxed">
-                If you have questions about this policy or your data rights, our privacy officer is ready to help.
+                Have questions about your search data or offline AI downloads? Contact our privacy team anytime.
               </p>
               <a
                 href="mailto:supportappnaya@gmail.com"
-                className="inline-flex items-center justify-center w-full gap-2 px-4 py-2.5 bg-white text-primary rounded-xl text-xs font-bold shadow-md hover:bg-opacity-95 transition-all"
+                className="inline-flex items-center justify-center w-full gap-2 px-4 py-2.5 bg-white text-gray-900 rounded-xl text-xs font-bold shadow-md hover:bg-opacity-95 transition-all"
               >
-                <span className="material-symbols-outlined text-sm">mail</span>
-                Send Email
+                <span className="material-symbols-outlined text-sm text-cyan-600">mail</span>
+                <span>Send Email</span>
               </a>
             </div>
           </div>
         </aside>
+
 
         {/* Right Side: Document Content */}
         <div className="col-span-11 lg:col-span-8 xl:col-span-9 space-y-16">
