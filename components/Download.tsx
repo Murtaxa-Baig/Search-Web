@@ -29,7 +29,7 @@ export default function Download() {
           className="mb-16"
         >
           <div className="mono-tag mb-4">
-            Official Mobile Release v2.0
+            Official Mobile Release 
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-white mt-4 mb-4 tracking-tight uppercase">
             Get Google Search for Android

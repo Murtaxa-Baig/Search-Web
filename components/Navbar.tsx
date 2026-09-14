@@ -40,7 +40,7 @@ export default function Navbar() {
                   Google Search
                 </span>
                 <span className="px-2 py-0.5 text-[10px] font-mono font-bold uppercase tracking-wider bg-white text-black rounded-none">
-                  v2.0
+                  
                 </span>
               </div>
               <span className="text-[11px] text-zinc-400 font-mono hidden sm:block">

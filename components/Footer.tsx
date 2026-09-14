@@ -120,7 +120,7 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <span className="hover:text-white transition-colors cursor-pointer">Security</span>
             <span>•</span>
-            <span className="hover:text-white transition-colors cursor-pointer">Offline AI v2.0</span>
+            <span className="hover:text-white transition-colors cursor-pointer">Offline AI </span>
           </div>
         </div>
 

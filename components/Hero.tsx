@@ -119,7 +119,7 @@ export default function Hero() {
                     <span className="w-2.5 h-2.5 bg-zinc-600 rounded-none" />
                   </div>
                   <span className="text-xs font-mono text-zinc-400 ml-2 font-bold uppercase tracking-wider">
-                    Multi-Engine Simulator v2.0
+                    Multi-Engine Simulator 
                   </span>
                 </div>
 
