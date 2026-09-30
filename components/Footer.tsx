@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <Logo size={32} />
               <span className="text-xl font-black text-white tracking-tight uppercase">
-                Google Search
+                Search App
               </span>
             </div>
             <p className="text-zinc-400 text-xs leading-relaxed">

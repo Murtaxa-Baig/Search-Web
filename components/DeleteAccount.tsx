@@ -150,7 +150,7 @@ export default function DeleteAccount() {
                                     Delete Your Account
                                 </h1>
                                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                                    Permanently remove your Google Search user profile, search configurations, and saved data.
+                                    Permanently remove your Search App user profile, search configurations, and saved data.
                                 </p>
                             </div>
 

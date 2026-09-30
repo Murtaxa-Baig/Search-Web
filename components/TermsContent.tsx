@@ -40,7 +40,7 @@ export default function TermsContent() {
             title: "1. Acceptance of Agreement",
             content: (
               <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                By accessing or using Google Search (“Service”), you agree to be
+                By accessing or using Search App (“Service”), you agree to be
                 legally bound by these Terms & Conditions. If you disagree with
                 any provision, you must immediately cease use of the Service.
               </p>
@@ -55,7 +55,7 @@ export default function TermsContent() {
                   <span className="font-bold text-gray-900 dark:text-white min-w-[100px]">
                     “Platform”:
                   </span>
-                  <span>Refers to the Google Search website, mobile application, and simultaneous search services.</span>
+                  <span>Refers to the Search App website, mobile application, and simultaneous search services.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="font-bold text-gray-900 dark:text-white min-w-[100px]">
@@ -81,7 +81,7 @@ export default function TermsContent() {
             title: "3. Description of Services",
             content: (
               <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                Google Search provides simultaneous multi-browser search execution, in-app active WebViews integration, and local offline AI model search functionality for mobile users.
+                Search App provides simultaneous multi-browser search execution, in-app active WebViews integration, and local offline AI model search functionality for mobile users.
               </p>
             ),
           },
@@ -91,7 +91,7 @@ export default function TermsContent() {
             content: (
               <div className="space-y-3 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
                 <p>
-                  Google Search offers auto-renewable weekly and monthly subscription plans granting full access to offline AI search models, parallel WebViews, and customizable location trends.
+                  Search App offers auto-renewable weekly and monthly subscription plans granting full access to offline AI search models, parallel WebViews, and customizable location trends.
                 </p>
                 <p>
                   New users are eligible for a **3-day free trial**, allowing complete access to test all feature capabilities before billing commences.
@@ -137,7 +137,7 @@ export default function TermsContent() {
             title: "6. Intellectual Property",
             content: (
               <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
-                AppNaya Technologies owns all proprietary designs, software code, offline AI models, and brand logos associated with Google Search. Users retain ownership of personal profile settings and search query parameters.
+                AppNaya Technologies owns all proprietary designs, software code, offline AI models, and brand logos associated with Search App. Users retain ownership of personal profile settings and search query parameters.
               </p>
             ),
           },
@@ -147,7 +147,7 @@ export default function TermsContent() {
             content: (
               <div className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
                 <p>
-                  To the maximum extent permitted by law, Google Search and AppNaya Technologies shall not be liable for indirect damages, third-party search result variations, or temporary network outages.
+                  To the maximum extent permitted by law, Search App and AppNaya Technologies shall not be liable for indirect damages, third-party search result variations, or temporary network outages.
                 </p>
               </div>
             ),

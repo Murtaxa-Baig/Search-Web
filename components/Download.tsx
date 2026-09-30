@@ -32,7 +32,7 @@ export default function Download() {
             Official Mobile Release 
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-white mt-4 mb-4 tracking-tight uppercase">
-            Get Google Search for Android
+            Get Search App for Android
           </h2>
           <p className="text-zinc-400 max-w-xl mx-auto text-xs sm:text-sm font-mono">
             Execute simultaneous queries across multiple search engines and run local offline AI models on your mobile hardware.

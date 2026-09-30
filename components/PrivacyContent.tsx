@@ -79,7 +79,7 @@ export default function PrivacyContent() {
           Privacy Policy
         </h1>
         <p className="text-gray-600 dark:text-gray-300 text-base md:text-lg font-normal leading-relaxed max-w-3xl mb-8">
-          Google Search is dedicated to maintaining transparent information about how we collect, use, process, and protect your data while using our simultaneous multi-browser search, WebView integration, and offline AI search services.
+          Search App is dedicated to maintaining transparent information about how we collect, use, process, and protect your data while using our simultaneous multi-browser search, WebView integration, and offline AI search services.
         </p>
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-xs sm:text-sm">
           <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
@@ -163,10 +163,10 @@ export default function PrivacyContent() {
             </div>
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                This Privacy Policy explains how **Google Search** collects, uses, stores, and protects user information when using our mobile application, website, and simultaneous multi-browser search, WebView integration, and offline AI search services.
+                This Privacy Policy explains how **Search App** collects, uses, stores, and protects user information when using our mobile application, website, and simultaneous multi-browser search, WebView integration, and offline AI search services.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                By using Google Search, you agree to the practices described in this Privacy Policy.
+                By using Search App, you agree to the practices described in this Privacy Policy.
               </p>
             </div>
           </motion.section>
@@ -271,7 +271,7 @@ export default function PrivacyContent() {
                   <span className="material-symbols-outlined p-2 rounded-xl bg-green-500/10">photo_library</span>
                   <h3 className="font-bold text-lg text-[#131118] dark:text-white">Permissions & Device Data</h3>
                 </div>
-                <p className="text-xs text-gray-500">With your explicit permission, Google Search may access:</p>
+                <p className="text-xs text-gray-500">With your explicit permission, Search App may access:</p>
                 <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-2">
                   <li className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
@@ -358,7 +358,7 @@ export default function PrivacyContent() {
                     <h3 className="font-bold text-lg text-[#131118] dark:text-white">3-Day Free Trial</h3>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                    Google Search provides:
+                    Search App provides:
                   </p>
                   <div className="p-4 rounded-xl bg-primary/5 border border-primary/10 text-center">
                     <div className="text-3xl font-black text-primary">3-Day Free Trial</div>
@@ -580,7 +580,7 @@ export default function PrivacyContent() {
               </div>
               <div className="space-y-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
-                  Google Search utilizes advanced local AI technologies and multi-browser dispatching to retrieve search results.
+                  Search App utilizes advanced local AI technologies and multi-browser dispatching to retrieve search results.
                 </p>
                 <p className="font-semibold text-gray-800 dark:text-gray-200">
                   We are not affiliated with, endorsed by, or officially associated with these third-party AI service providers.
@@ -760,7 +760,7 @@ export default function PrivacyContent() {
 
             <div className="p-6 rounded-2xl bg-white dark:bg-[#151224] border border-gray-100 dark:border-gray-800/80 shadow-sm space-y-4">
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Google Search may implement standard technical tracking and performance technologies:
+                Search App may implement standard technical tracking and performance technologies:
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -805,7 +805,7 @@ export default function PrivacyContent() {
                 <span className="font-bold text-sm">Age Safeguard Warning</span>
               </div>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
-                Google Search is not intended for children under the age of **13**. We do not knowingly collect or request personal information from children.
+                Search App is not intended for children under the age of **13**. We do not knowingly collect or request personal information from children.
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
                 If we become aware that we have inadvertently collected information from a child under 13, we will take immediate steps to delete all such data promptly from our secure databases.
@@ -835,7 +835,7 @@ export default function PrivacyContent() {
                   • Changes become effective **immediately** upon publication within the application or website.
                 </p>
                 <p>
-                  • Continued use of Google Search after updates are posted constitutes your explicit acceptance of the revised Privacy Policy.
+                  • Continued use of Search App after updates are posted constitutes your explicit acceptance of the revised Privacy Policy.
                 </p>
               </div>
             </div>
@@ -899,7 +899,7 @@ export default function PrivacyContent() {
                 <div className="space-y-2">
                   <h4 className="font-extrabold text-[#131118] dark:text-white text-base">Acknowledgment & Agreement</h4>
                   <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
-                    By using **Google Search**, you acknowledge that you have read, understood, and agreed to be bound by all guidelines, procedures, and practices detailed in this Privacy Policy.
+                    By using **Search App**, you acknowledge that you have read, understood, and agreed to be bound by all guidelines, procedures, and practices detailed in this Privacy Policy.
                   </p>
                 </div>
               </div>

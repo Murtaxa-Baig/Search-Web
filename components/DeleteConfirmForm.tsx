@@ -292,7 +292,7 @@ function DeleteConfirmFormContent() {
                                 Account Deleted
                             </h2>
                             <p className="text-gray-500 dark:text-gray-400 text-xs sm:text-sm leading-relaxed">
-                                Your Google Search profile and all associated data have been permanently removed.
+                                Your Search App profile and all associated data have been permanently removed.
                             </p>
                         </div>
 

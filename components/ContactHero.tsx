@@ -21,7 +21,7 @@ export default function ContactHero() {
           transition={{ delay: 0.1 }}
           className="text-4xl md:text-6xl font-black text-white mb-4 tracking-tight uppercase"
         >
-          Get in Touch with Google Search
+          Get in Touch with Search App
         </motion.h1>
 
         <motion.p

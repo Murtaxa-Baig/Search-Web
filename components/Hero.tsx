@@ -277,7 +277,7 @@ export default function Hero() {
             <div className="relative h-64 sm:h-80 w-full overflow-hidden mb-4 border border-zinc-800 bg-zinc-900">
               <Image
                 src="/images/hero_mockup.jpg"
-                alt="Google Search Multi-Engine Smartphone View"
+                alt="Search App Multi-Engine Smartphone View"
                 fill
                 className="object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-700"
                 priority

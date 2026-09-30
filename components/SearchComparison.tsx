@@ -46,7 +46,7 @@ export default function SearchComparison() {
             Comparison Matrix
           </div>
           <h2 className="text-3xl sm:text-5xl font-black text-white mt-4 mb-4 tracking-tight uppercase">
-            Standard Mobile Browsers vs Google Search
+            Standard Mobile Browsers vs Search App
           </h2>
           <p className="text-zinc-400 max-w-2xl mx-auto text-xs sm:text-sm font-mono">
             Compare key architectural capabilities between standard single-tab browsers and our multi-engine solution.
@@ -67,7 +67,7 @@ export default function SearchComparison() {
                 <th className="pb-4 text-xs font-mono font-bold text-zinc-500 uppercase tracking-widest">Standard Mobile Browsers</th>
                 <th className="pb-4 text-xs font-mono font-bold text-white uppercase tracking-widest flex items-center gap-1.5">
                   <span className="material-symbols-outlined text-sm">bolt</span>
-                  <span>Google Search App</span>
+                  <span>Search App App</span>
                 </th>
               </tr>
             </thead>

@@ -35,7 +35,7 @@ export default function Navbar() {
             <div className="flex flex-col">
               <div className="flex items-center gap-2">
                 <span className="text-white text-xl font-black tracking-tight uppercase group-hover:text-zinc-300 transition-colors">
-                  Google Search
+                  Search App
                 </span>
               </div>
               <span className="text-[11px] text-zinc-400 font-mono hidden sm:block">

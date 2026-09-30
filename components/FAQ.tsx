@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const faqs = [
     {
         question: "How does simultaneous multi-browser search work?",
-        answer: "When you type a search query, Google Search dispatches the search request to multiple search engines (such as Google, Brave, Bing, and DuckDuckGo) in parallel. Active WebViews for each browser engine run simultaneously inside the application, letting you switch tabs instantly with zero load latency.",
+        answer: "When you type a search query, Search App dispatches the search request to multiple search engines (such as Google, Brave, Bing, and DuckDuckGo) in parallel. Active WebViews for each browser engine run simultaneously inside the application, letting you switch tabs instantly with zero load latency.",
     },
     {
         question: "How does the Offline AI Search mode function?",
