@@ -31,15 +31,12 @@ export default function Navbar() {
           
           {/* Logo Brand */}
           <Link href="/" className="flex items-center gap-3 group focus:outline-none">
-            <div className="p-2 bg-zinc-900 border border-zinc-700 text-white rounded-none group-hover:border-white transition-colors">
-              <Logo size={28} />
-            </div>
+            <Logo size={36} />
             <div className="flex flex-col">
               <div className="flex items-center gap-2">
                 <span className="text-white text-xl font-black tracking-tight uppercase group-hover:text-zinc-300 transition-colors">
                   Google Search
                 </span>
-                  
               </div>
               <span className="text-[11px] text-zinc-400 font-mono hidden sm:block">
                 Simultaneous Search & Offline AI

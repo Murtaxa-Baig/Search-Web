@@ -12,9 +12,7 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="space-y-4 max-w-sm">
             <div className="flex items-center gap-3">
-              <div className="p-2 bg-zinc-900 border border-zinc-800 text-white">
-                <Logo size={24} />
-              </div>
+              <Logo size={32} />
               <span className="text-xl font-black text-white tracking-tight uppercase">
                 Google Search
               </span>
