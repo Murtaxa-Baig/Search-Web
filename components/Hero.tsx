@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const sampleQueries = [
   "Latest Tech Innovations 2026",
@@ -39,16 +40,33 @@ export default function Hero() {
         {/* Top Header Text Block */}
         <div className="flex flex-col items-center justify-center text-center mb-16">
           
-          {/* Black & White Tag Badge */}
+          {/* Black & White Tag Badge + Project ID & Verification Link */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="mono-tag mb-8"
+            className="flex flex-wrap items-center justify-center gap-3 mb-8"
           >
-            <span className="w-2 h-2 rounded-none bg-white animate-pulse" />
-            <span>Multi-Browser Search & Offline AI Engine</span>
-            <span className="material-symbols-outlined text-xs">rocket_launch</span>
+            <div className="mono-tag">
+              <span className="w-2 h-2 rounded-none bg-white animate-pulse" />
+              <span>Multi-Browser Search & Offline AI Engine</span>
+              <span className="material-symbols-outlined text-xs">rocket_launch</span>
+            </div>
+
+            <div className="px-3 py-1.5 bg-zinc-900 border border-zinc-800 text-[11px] font-mono text-zinc-300 flex items-center gap-2">
+              <span className="text-zinc-500 font-bold">ID:</span>
+              <span>project-753133373647</span>
+            </div>
+
+            <Link
+              href="/google9d1e2dac4c1a201d.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-1.5 bg-zinc-900 border border-zinc-800 hover:border-white text-[11px] font-mono text-zinc-300 hover:text-white flex items-center gap-1.5 transition-colors"
+            >
+              <span className="material-symbols-outlined text-xs text-white">verified</span>
+              <span>Verification File</span>
+            </Link>
           </motion.div>
 
           {/* Main Title */}
@@ -119,7 +137,7 @@ export default function Hero() {
                     <span className="w-2.5 h-2.5 bg-zinc-600 rounded-none" />
                   </div>
                   <span className="text-xs font-mono text-zinc-400 ml-2 font-bold uppercase tracking-wider">
-                    Multi-Engine Simulator 
+                    Multi-Engine Simulator
                   </span>
                 </div>
 

@@ -22,10 +22,15 @@ export default function Footer() {
             <p className="text-zinc-400 text-xs leading-relaxed">
               Multi-browser simultaneous search mobile application. Execute parallel web queries across Google, Brave, Bing, and DuckDuckGo with local offline AI model intelligence.
             </p>
-            {/* Status Pill */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-zinc-900 border border-zinc-800 text-[11px] font-bold text-white uppercase">
-              <span className="w-2 h-2 bg-white animate-pulse" />
-              <span>All Systems Operational (99.9% Uptime)</span>
+            {/* Status Pill & Project ID */}
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-zinc-900 border border-zinc-800 text-[11px] font-bold text-white uppercase">
+                <span className="w-2 h-2 bg-white animate-pulse" />
+                <span>Operational (99.9% Uptime)</span>
+              </div>
+              <div className="px-3 py-1 bg-zinc-900 border border-zinc-800 text-[11px] font-bold text-zinc-400 uppercase">
+                ID: project-753133373647
+              </div>
             </div>
           </div>
 
@@ -84,7 +89,7 @@ export default function Footer() {
 
             <div className="space-y-3">
               <h4 className="text-xs font-bold uppercase tracking-widest text-zinc-400">
-                Legal
+                Verification & Legal
               </h4>
               <ul className="text-zinc-400 space-y-2 text-xs">
                 <li>
@@ -95,6 +100,12 @@ export default function Footer() {
                 <li>
                   <Link href="/privacy" className="hover:text-white transition-colors">
                     Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/google9d1e2dac4c1a201d.html" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-1">
+                    <span className="material-symbols-outlined text-xs">verified</span>
+                    <span>Google Site Verification</span>
                   </Link>
                 </li>
               </ul>
@@ -120,7 +131,7 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <span className="hover:text-white transition-colors cursor-pointer">Security</span>
             <span>•</span>
-            <span className="hover:text-white transition-colors cursor-pointer">Offline AI </span>
+            <span className="hover:text-white transition-colors cursor-pointer">Project ID: project-753133373647</span>
           </div>
         </div>
 
